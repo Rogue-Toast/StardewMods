@@ -1,0 +1,21 @@
+{
+    "Name": "Toothless Sounds",
+    "Author": "Logophile",
+    "Version": "1.0.0",
+    "Description": "Changes the cat's meow to Toothless sounds, to go along with the mod Stardew Toothless",
+    "UniqueID": "Logophile.ToothlessSounds",
+    "UpdateKeys": []
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "aedenthorn.SoundTweaker",
+      "IsRequired": true
+    }
+  ]
+}

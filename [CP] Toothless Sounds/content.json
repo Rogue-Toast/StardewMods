@@ -1,0 +1,24 @@
+{
+    "Format": "1.29.0",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.SoundTweaker/dictionary",
+            "Entries": {
+                "cat": {
+                    "sounds": [
+                        {
+                            "variationType": "RandomNoImmediateRepeats",
+                            "category": "Sound",
+                            "filePaths": [
+                                "{{InternalAssetKey: sounds/toothless1.wav}}",
+                                "{{InternalAssetKey: sounds/toothless2.wav}}",
+                                "{{InternalAssetKey: sounds/toothless3.wav}}"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
