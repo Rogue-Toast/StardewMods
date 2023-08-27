@@ -1,0 +1,11 @@
+{
+    "Name": "Eekfish, an Aquarium Fish Retexture",
+    "Author": "Logophile/ichortower",
+    "Version": "1.0.0",
+    "Description": "Simply replaces the eel sprite for the aquarium.",
+    "UniqueID": "Logophile.eekfish",
+    "UpdateKeys": [], 
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

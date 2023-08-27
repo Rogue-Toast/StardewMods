@@ -1,0 +1,21 @@
+{
+	"Format": "1.29.0",
+	"Changes": [
+		{
+			"LogName": "Spawns Eek in Bugland",
+			"Action": "EditMap",
+			"Target": "Maps/BugLand",
+			"Maptiles": [
+				{
+					"Position": { "X": 31, "Y": 47},
+					"Layer": "Back",
+					"SetProperties": {
+						"CustomCompanions": "Spawn 1 Logophile.EekCC.Eek"
+					}
+				}
+			]
+
+		}
+	]
+
+}

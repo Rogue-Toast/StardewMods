@@ -1,0 +1,27 @@
+{
+  "Name": "Eek",
+  "Type": "Walking",
+  "EnableFarmerCollision": true,
+  "EnableCharacterCollision": false,
+  "EnableShadow": true,
+
+ "TravelSpeed": 2,
+  "SpawnDirection": 1,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": 1024,
+  "IdleBehavior": "Wander", 
+  "IdleArguments": [1, 750],
+  "DespawnOnTimer": 100000,
+  "Respawn": true,
+  "Scale": 0.8,
+  "InspectionDialogue": "Eek!",
+
+  "FrameSizeWidth": 18,
+  "FrameSizeHeight": 20,
+
+  "UniformAnimation": {
+    "StartingFrame": 0,
+    "NumberofFrames": 4,
+    "Duration": 200
+  }
+}

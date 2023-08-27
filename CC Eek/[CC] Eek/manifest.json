@@ -1,0 +1,13 @@
+{
+	"Name": "Eek! for Custom Companions",
+	"Author": "Logophile",
+	"Version": "1.0.0",
+	"Description": "A discombobulated eel friend",
+	"UniqueID": "Logophile.EekCC",	
+	"UpdateKeys": [ ],
+	"MinimumApiVersion": "3.6.0",
+	"ContentPackFor": {
+		"UniqueID": "PeacefulEnd.CustomCompanions",
+		"MinimumVersion": "1.4.3"
+  }
+}

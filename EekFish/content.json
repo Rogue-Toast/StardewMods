@@ -1,0 +1,12 @@
+{
+	"Format": "1.29.0",
+	"Changes": [
+		{
+			"LogName": "Replaces eel aquarium sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/AquariumFish",
+			"FromFile": "assets/eekfish.png"
+		}
+	]
+
+}
