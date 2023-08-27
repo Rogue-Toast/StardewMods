@@ -4,7 +4,7 @@
 	"Version": "1.0.0",
 	"Description": "Spawns a harmless smol friend in the game",
 	"UniqueID": "Logophile.EekCP",
-	"UpdateKeys": [],
+	"UpdateKeys": ["Nexus 18047"],
 	"MinimumApiVersion": "3.6.0",
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher"
