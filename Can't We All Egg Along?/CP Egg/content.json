@@ -1,0 +1,21 @@
+{ //check against json for ring companion
+	"Format": "1.29.0",
+	"Changes": [
+		{
+			"LogName": "Spawns Egg as ring-based CC",
+			"Action": "EditMap",
+			"Target": "Maps/",
+			"Maptiles": [
+				{
+					"Position": { "X": , "Y": },
+					"Layer": "Back",
+					"SetProperties": {
+						"CustomCompanions": "Spawn 1 Logophile.EggAlongCC. // randomize 
+					}
+				}
+			]
+
+		}
+	]
+
+}

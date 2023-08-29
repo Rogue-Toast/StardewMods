@@ -1,0 +1,31 @@
+{
+	"Name": "Can't We All Egg Along?",
+	"Author": "Logophile & Panda",
+	"Version": "1.0.0",
+	"Description": "Egg is the best smol friend",
+	"UniqueID": "Logophile.EggAlongCP",
+	"UpdateKeys": [""],
+	"MinimumApiVersion": "3.6.0",
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+
+	"Dependencies": [
+		{
+			"UniqueID": "Pathoschild.ContentPatcher",
+			"IsRequired": true,
+		},
+		{
+			"UniqueID": "PeacefulEnd.CustomCompanions",
+			"IsRequired": true,
+		},
+		{
+			"UniqueID": "spacechase0.JSONAssets",
+			"IsRequired": true,
+		},
+		{
+			"UniqueID": "Logophile.EggAlongCC",
+			"IsRequired": true
+		}
+	]
+}
