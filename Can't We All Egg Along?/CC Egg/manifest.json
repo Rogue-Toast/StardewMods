@@ -1,0 +1,13 @@
+{
+	"Name": "Can't We All Egg Along?",
+	"Author": "Logophile & Panda",
+	"Version": "1.0.0",
+	"Description": "Egg wears many hats",
+	"UniqueID": "Logophile.EggAlongCC",	
+	"UpdateKeys": [ ],
+	"MinimumApiVersion": "3.6.0",
+	"ContentPackFor": {
+		"UniqueID": "PeacefulEnd.CustomCompanions",
+		"MinimumVersion": "1.4.3"
+  }
+}

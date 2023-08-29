@@ -1,0 +1,50 @@
+{
+  "Name": "Egg_Benhat",
+  "Type": "Walking",
+  "EnableFarmerCollision": true,
+  "EnableCharacterCollision": false,
+  "EnableShadow": ,
+
+ "TravelSpeed": ,  
+  "SpawnDirection": ,
+  "MaxIdleDistance": 0,
+  "MaxDistanceBeforeTeleport": ,
+  "IdleBehavior": "Walk_Square", 
+  "Scale": ,  // depends on sprite size
+  "InspectionDialogue": "", // randomize using i18n
+
+  "FrameSizeWidth": ,
+  "FrameSizeHeight": 
+},
+
+{
+
+// This plays when the companion travels upwards
+  "UpAnimation": {
+    "StartingFrame": ,
+    "NumberOfFrames": ,
+    "Duration": 100
+},
+
+// This plays when the companion travels downwards
+  "DownAnimation": {
+    "StartingFrame": ,
+    "NumberOfFrames": ,
+    "Duration": 100
+},
+
+// This plays when the companion travels left
+  "LeftAnimation": {
+    "StartingFrame": ,
+   "NumberOfFrames": ,
+    "Duration": 100
+},
+
+// This plays when the companion travels right
+  "RightAnimation": {
+    "StartingFrame": ,
+    "NumberOfFrames": ,
+    "Duration": 100
+  }
+
+}
