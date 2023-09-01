@@ -4,13 +4,13 @@
 		{
 			"LogName": "Spawns Egg as ring-based CC",
 			"Action": "EditMap",
-			"Target": "Maps/",
+			"Target": "Maps/Farm",
 			"Maptiles": [
 				{
-					"Position": { "X": , "Y": },
+					"Position": { "X": 64, "Y":19 },
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn 1 Logophile.EggAlongCC. // randomize 
+						"CustomCompanions": "Spawn 1 Logophile.EggAlongCC.Egg_TrafficCone" // randomize 
 					}
 				}
 			]

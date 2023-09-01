@@ -1,0 +1,47 @@
+{
+  "Name": "Egg_TrafficCone",
+  "Type": "Walking",
+  "EnableFarmerCollision": true,
+  "EnableCharacterCollision": false,
+  "EnableShadow": true,
+
+ "TravelSpeed": 2,  
+  "SpawnDirection": 0,
+  "MaxIdleDistance": 0,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Follow", 
+  "Scale": 0.8,  // depends on sprite size
+  "InspectionDialogue": "", // randomize using i18n
+
+  "FrameSizeWidth": 20,
+  "FrameSizeHeight": 20,
+
+// This plays when the companion travels upwards
+  "UpAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 5,
+    "Duration": 200
+  },
+
+// This plays when the companion travels downwards
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 5,
+    "Duration": 200
+  },
+
+// This plays when the companion travels left
+  "LeftAnimation": {
+    "StartingFrame": 0,
+   "NumberOfFrames": 5,
+    "Duration": 200
+  },
+
+// This plays when the companion travels right
+  "RightAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 5,
+    "Duration": 200
+  }
+
+}
