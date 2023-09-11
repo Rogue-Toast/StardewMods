@@ -10,7 +10,7 @@
 					"Position": { "X": 64, "Y":19 },
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn 1 Logophile.EggAlongCC.Egg_TrafficCone" // randomize 
+						"CustomCompanions": "Spawn {{Random: }} Logophile.EggAlongCC.Egg" // randomize 
 					}
 				}
 			]
