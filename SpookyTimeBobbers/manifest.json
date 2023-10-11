@@ -1,0 +1,12 @@
+{
+	"Name": "SpookyTime Bobbers",
+	"Author": "Logophile",
+	"Version": "1.0.0",
+	"Description": "A collection of spooky season fishing rod bobbers.",
+	"UniqueID": "Logophile.SpookyBobbers",
+	"UpdateKeys": [ "Nexus:18637" ],
+
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+	},
+}

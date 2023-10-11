@@ -1,0 +1,49 @@
+{
+	"Format": "1.29.0",
+	"ConfigSchema":
+	{
+		"CustomBobberEnabled":{
+			"AllowValues": "true, false",
+			"Default": "true",
+		"Description": "Enable or disable custom bobber types."	
+		},
+
+		"CustomBobberType": {
+			"AllowValues": "alien, bat, ghost, goldenpumpkin, monster, mummy, pumpkin, skull, tigerslime, random",
+			"Default": "Random",
+			"Description": "Choose the bobber type.",
+		},
+	},
+
+	"DynamicTokens": [
+		{
+		"Name": "BobberType",
+		"Value": "{{CustomBobberType}}",
+		"When": {
+			"CustomBobberType |contains= Random": false,
+			},
+		},
+		{
+		"Name": "BobberType",
+		"Value": "{{Random: alien, bat, ghost, goldenpumpkin, monster, mummy, pumpkin, skull, tigerslime}}",
+		"When": {
+			"CustomBobberType |contains= Random": true,
+		        },
+		},
+	],
+
+	"Changes": [
+		{
+			"LogName": "Changes fishing rod bobber.",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{BobberType}}bobber.png",
+				"FromArea": { "X": 0, "Y": 0, "Width": 28, "Height": 12},
+				"ToArea": { "X": 169, "Y": 1902, "Width": 28, "Height": 12 },
+			"PatchMode": "Replace",
+			"When": {
+				"CustomBobberEnabled": "true"
+			},
+		}	
+	]
+}

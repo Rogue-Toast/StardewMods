@@ -1,0 +1,20 @@
+{
+	//CONFIGURATION
+
+	"config.CustomBobberEnabled.name": "CustomBobberEnabled",
+	"config.CustomBobberEnabled.description": "Enable or disable custom bobber types.",
+
+	"config.CustomBoberType.name": "CustomBobberType",
+	"config.CustomBobberType.values": "alien",
+	"config.CustomBobberType.values": "bat",
+	"config.CustomBobberType.values": "ghost",
+	"config.CustomBobberType.values": "goldenpumpkin",
+	"config.CustomBobberType.values": "monster",
+	"config.CustomBobberType.values": "mummy",
+	"config.CustomBobberType.values": "pumpkin",
+	"config.CustomBobberType.values": "skull",
+	"config.CustomBobberType.values": "tigerslime",
+	"config.CustomBobberType.values": "random",
+	"config.CustomBobberType.description": "Choose the bobber type."
+
+}
