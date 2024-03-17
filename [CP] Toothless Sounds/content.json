@@ -1,23 +1,27 @@
 {
-    "Format": "1.29.0",
+    "Format": "2.0.0",
     "Changes": [
         {
+            "LogName": "Add sound cue",
             "Action": "EditData",
-            "Target": "aedenthorn.SoundTweaker/dictionary",
+            "Target": "Data/AudioChanges",
             "Entries": {
-                "cat": {
-                    "sounds": [
-                        {
-                            "variationType": "RandomNoImmediateRepeats",
-                            "category": "Sound",
-                            "filePaths": [
-                                "{{InternalAssetKey: sounds/toothless1.wav}}",
-                                "{{InternalAssetKey: sounds/toothless2.wav}}",
-                                "{{InternalAssetKey: sounds/toothless3.wav}}"
-                            ]
-                        }
-                    ]
+                "{{ModID}}_toothless": {
+                    "ID": "{{ModID}}_toothless",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/toothless1.wav}}", "{{AbsoluteFilePath: assets/toothless2.wav}}", "{{AbsoluteFilePath: assets/toothless3.wav}}"],
+                    "Looped": false,
                 }
+            }
+        },
+        {
+            "LogName": "Change pet sound",
+            "Action": "EditData",
+            "Target": "Data/Pets",
+            "TargetField": ["Cat"],
+            "Entries": {
+                "BarkSound": "{{ModID}}_toothless",
+                "ContentSound": "{{ModID}}_toothless"
             }
         }
     ]
