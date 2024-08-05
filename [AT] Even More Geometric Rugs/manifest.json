@@ -1,0 +1,14 @@
+{
+  "Name": "[AT] Even More Geometric Rugs",
+  "Author": "Logophile",
+  "Version": "1.0.0",
+  "Description": "Yet another selection of colorful geometric rugs",
+  "UniqueID": "Logophile.EvenMoreGeometricRugs.AT",
+  "UpdateKeys": ["Nexus:"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures",
+    "MinimumVersion": "3.3.2"
+  }
+		
+}
