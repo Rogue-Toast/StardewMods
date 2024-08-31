@@ -4,7 +4,7 @@
   "Version": "1.0.0",
   "Description": "Yet another selection of colorful geometric rugs",
   "UniqueID": "Logophile.EvenMoreGeometricRugs.AT",
-  "UpdateKeys": ["Nexus:"],
+  "UpdateKeys": ["Nexus: 26732"],
   "Dependencies": [],
   "ContentPackFor": {
     "UniqueID": "PeacefulEnd.AlternativeTextures",

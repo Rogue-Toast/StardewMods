@@ -1,0 +1,15 @@
+{
+  "CollectiveNames":[
+    "Chest",
+    "Stone Chest",
+    "Junimo Chest",
+    "Big Chest",
+    "Big Stone Chest"
+  ],
+
+  "Type": "Craftable",
+  "Keywords": [ "Hodgepodge", "Logo" ],
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "Variations": 57
+}

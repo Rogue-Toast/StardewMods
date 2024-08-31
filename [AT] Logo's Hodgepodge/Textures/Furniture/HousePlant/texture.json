@@ -1,0 +1,8 @@
+{
+  "ItemName": "House Plant",
+  "Type": "Furniture",
+  "Keywords": [ "Hodgepodge", "Logo"],
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "Variations": 30
+}

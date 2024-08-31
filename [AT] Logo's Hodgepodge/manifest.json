@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Logo's Hodgepodge",
+  "Author": "Logophile",
+  "Version": "1.0.0",
+  "Description": "A collection of retextures for chests n stuff.",
+  "UniqueID": "logophile.hodgepodge",
+  "UpdateKeys": ["Nexus: 26953"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures",
+    "MinimumVersion": "6.9.0"
+  }
+}
