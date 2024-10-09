@@ -1,0 +1,66 @@
+{
+	"Format": "2.3.0",
+
+	"ConfigSchema": 
+	{
+		"Reward": {
+			"AllowValues": "Buffed, Superbuffed",
+			"Default": "Buffed"
+		},
+		"RestartQuest": {
+			"AllowValues": "true,false",
+			"Default": "false"
+		}
+
+	},
+
+	"Changes": [
+		{
+  			"Action": "EditData",
+  			"Target": "Data/TriggerActions",
+  			"Entries": {
+    			"{{ModId}}_Introductions": {
+      				"Id": "{{ModId}}_Introductions",
+     				"Trigger": "DayStarted",
+      				"Condition": "{{RestartQuest}}",
+      				"Actions": [
+        				"RemoveQuest 9",
+        				"AddQuest 9"
+      				]
+    			}			
+  			}
+		},
+		{
+			"LogAction": "Amend intro quest data - Buffed",
+			"Action": "EditData",
+			"Target": "Data/Quests",
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Fields", "9", 6],
+					"Value": "1000",
+					"Delimiter": ""
+				}
+			],
+			"When": {
+					"Reward": "Buffed"
+				}
+		},
+		{
+			"LogAction": "Amend intro quest data - Superbuffed",
+			"Action": "EditData",
+			"Target": "Data/Quests",
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Fields", "9", 6],
+					"Value": "10000",
+					"Delimiter": ""
+				}
+			],
+			"When": {
+					"Reward": "Superbuffed"
+				}
+		}
+	]
+}

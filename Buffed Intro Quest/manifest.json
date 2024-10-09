@@ -1,0 +1,13 @@
+{
+	"Name": "Buffed Intro Quest",
+	"Author": "Logophile",
+	"Version": "1.0.0",
+	"Description": "Makes the intro quest reward worth completing.",
+	"UniqueID": "Logophile.BuffedIntroQuest",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": [ "Nexus:28251" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "2.0.0"
+	},
+}
