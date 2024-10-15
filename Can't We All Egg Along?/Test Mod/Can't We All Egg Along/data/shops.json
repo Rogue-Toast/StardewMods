@@ -1,0 +1,19 @@
+{
+	"Changes": [
+		{
+      		"LogName": "Add Forager EggNode to Marnie's shop",
+      		"Action": "EditData",
+	  		"Target": "Data/Shops",
+      		"TargetField": [ "AnimalShop", "Items" ],
+      		"Entries": {
+				"{{ModId}}_ForagerEggNode": {
+					"Id": "{{ModId}}_ForagerEggNode",
+					"ItemId": "{{ModId}}_ForagerEggNode",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Any Logophile.EggAlong.EggNodeArrival",
+					"Price": 250,
+					"IgnoreShopPriceModifiers": true
+				}
+			}
+		}
+	]
+}

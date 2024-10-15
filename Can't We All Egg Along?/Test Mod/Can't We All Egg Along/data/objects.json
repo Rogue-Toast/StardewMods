@@ -1,0 +1,142 @@
+	{
+	"Changes": [
+		{
+			"LogName": "Add egg nodes",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_ForagerEggNode": {
+					"Name": "{{ModId}}_ForagerEggNode",
+					"DisplayName": "{{i18n:ForagerEggNode.Name}}",
+					"Description": "{{i18n:ForagerEggNode.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 300,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 0,
+					"Edibility": -300,
+					"ContextTags": [
+						"not_giftable",
+						"placeable",
+						"color_green",
+						"EggNode"
+					],
+
+					"ExcludeFromRandomSale": "true",
+					"ExcludeFromShippingCollection": "true",
+
+				},
+
+				"{{ModId}}_FarmerEggNode": {
+					"Name": "{{ModId}}_FarmerEggNode",
+					"DisplayName": "{{i18n:FarmerEggNode.Name}}",
+					"Description": "{{i18n:FarmerEggNode.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 1,
+					"Edibility": -300,
+					"ContextTags": [
+						"not_giftable",
+						"placeable",
+						"color_yellow",
+						"EggNode"
+					],
+
+					"ExcludeFromRandomSale": "true",
+					"ExcludeFromShippingCollection": "true",
+
+				},
+
+				"{{ModId}}_BuffEggNode": {
+					"Name": "{{ModId}}_BuffEggNode",
+					"DisplayName": "{{i18n:BuffEggNode.Name}}",
+					"Description": "{{i18n:BuffEggNode.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 700,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 2,
+					"Edibility": -300,
+					"ContextTags": [
+						"not_giftable",
+						"placeable",
+						"color_red",
+						"EggNode"
+					],
+
+					"ExcludeFromRandomSale": "true",
+					"ExcludeFromShippingCollection": "true",
+
+				},
+
+				"{{ModId}}_ProspectorEggNode": {
+					"Name": "{{ModId}}_ProspectorEggNode",
+					"DisplayName": "{{i18n:ProspectorEggNode.Name}}",
+					"Description": "{{i18n:ProspectorEggNode.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 900,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 3,
+					"Edibility": -300,
+					"ContextTags": [
+						"not_giftable",
+						"placeable",
+						"color_black",
+						"EggNode"
+					],
+
+					"ExcludeFromRandomSale": "true",
+					"ExcludeFromShippingCollection": "true",
+
+				},
+
+				"{{ModId}}_UncannyEggNode": {
+					"Name": "{{ModId}}_UncannyEggNode",
+					"DisplayName": "{{i18n:UncannyEggNode.Name}}",
+					"Description": "{{i18n:UncannyEggNode.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 1200,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 4,
+					"Edibility": -300,
+					"ContextTags": [
+						"not_giftable",
+						"placeable",
+						"color_iridium",
+						"EggNode"
+					],
+
+					"ExcludeFromRandomSale": "true",
+					"ExcludeFromShippingCollection": "true",
+
+				},
+
+				"{{ModId}}_SpecialEggNode": {
+					"Name": "{{ModId}}_SpecialEggNode",
+					"DisplayName": "{{i18n:SpecialEggNode.Name}}",
+					"Description": "{{i18n:SpecialEggNode.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 1500,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 5,
+					"Edibility": -300,
+					"ContextTags": [
+						"not_giftable",
+						"placeable",
+						"color_cyan",
+						"EggNode"
+					],
+
+					"ExcludeFromRandomSale": "true",
+					"ExcludeFromShippingCollection": "true",
+
+				},
+			}
+		}
+	]
+}

@@ -1,0 +1,13 @@
+﻿{
+	"Name": "Can't We All Egg Along",
+	"Author": "Logophile & SweetPanda",
+	"Version": "1.0.0",
+	"Description": "Adds hat-wearing eggs as custom farm creatures.",
+	"UniqueID": "Logophile.EggAlong",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": [""],
+	"ContentPackFor": {
+		"UniqueID": "PathosChild.ContentPatcher",
+        "MinimumVersion": "2.0.0"
+	}
+}
