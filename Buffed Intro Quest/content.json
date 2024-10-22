@@ -4,7 +4,7 @@
 	"ConfigSchema": 
 	{
 		"Reward": {
-			"AllowValues": "Buffed, Superbuffed",
+			"AllowValues": "Buffed, Buffed Up, Superbuffed",
 			"Default": "Buffed"
 		},
 		"RestartQuest": {
@@ -44,6 +44,22 @@
 			],
 			"When": {
 					"Reward": "Buffed"
+				}
+		},
+		{
+			"LogAction": "Amend intro quest data - Buffed Up",
+			"Action": "EditData",
+			"Target": "Data/Quests",
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Fields", "9", 6],
+					"Value": "5000",
+					"Delimiter": ""
+				}
+			],
+			"When": {
+					"Reward": "Buffed Up"
 				}
 		},
 		{

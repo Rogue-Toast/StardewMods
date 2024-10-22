@@ -1,7 +1,7 @@
 {
 	"Name": "Buffed Intro Quest",
 	"Author": "Logophile",
-	"Version": "1.0.0",
+	"Version": "1.1.0",
 	"Description": "Makes the intro quest reward worth completing.",
 	"UniqueID": "Logophile.BuffedIntroQuest",
 	"MinimumApiVersion": "4.0.0",
