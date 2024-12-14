@@ -208,17 +208,14 @@
 					"Skins":[
 						{
 							"ID": "{{ModId}}_FrogHatEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/FrogHatEgg"
 						},
 						{
 							"ID": "{{ModId}}_RainHatEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/RainHatEgg"
 						},
 						{
 							"ID": "{{ModId}}_UmbrellaHatEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/UmbrellaHatEgg"
 						},
 					],
@@ -435,17 +432,14 @@
 					"Skins":[
 						{
 							"ID": "{{ModId}}_SunglassesEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/SunglassesEgg"
 						},
 						{
 							"ID": "{{ModId}}_FlowerPotEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/FlowerPotEgg"
 						},
 						{
 							"ID": "{{ModId}}_BirdEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/BirdEgg"
 						},
 					],
@@ -561,17 +555,14 @@
 					"Skins":[
 						{
 							"ID": "{{ModId}}_JunimoEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/JunimoEgg"
 						},
 						{
 							"ID": "{{ModId}}_GlassesEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/GlassesEgg"
 						},
 						{
 							"ID": "{{ModId}}_PanEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/PanEgg"
 						},
 					],
@@ -680,17 +671,14 @@
 					"Skins":[
 						{
 							"ID": "{{ModId}}_FeatherEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/FeatherEgg"
 						},
 						{
 							"ID": "{{ModId}}_BoxEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/BoxEgg"
 						},
 						{
 							"ID": "{{ModId}}_TrafficConeEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/TrafficConeEgg"
 						},
 					],
@@ -798,22 +786,18 @@
 					"Skins":[
 						{
 							"ID": "{{ModId}}_QiGlassesEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/QiGlassesEgg"
 						},
 						{
 							"ID": "{{ModId}}_WitchHatEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/WitchHatEgg"
 						},
 						{
 							"ID": "{{ModId}}_DevilHatEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/DevilHatEgg"
 						},
 						{
 							"ID": "{{ModId}}_SpookyMaskEgg",
-							"Weight": 2,
 							"Texture": "Mods/{{ModId}}/SpookyMaskEgg"
 						}
 					],
