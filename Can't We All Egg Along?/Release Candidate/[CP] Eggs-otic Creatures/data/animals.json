@@ -1,0 +1,925 @@
+{
+	"Changes": 
+	[
+		{
+			"LogName": "Add Egggies as farm creatures",
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": 
+			{
+			//Forager Egg breed
+				"{{ModId}}_ForagerEgg":{
+					"DisplayName": "{{i18n:ForagerEgg.Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 1000,
+					"EggItemIds":[
+						"{{ModID}}_ForagerEggNode"
+					],
+					"BirthText": "{{i18n:ForagerEgg.Hatch}}",
+					"DaysToMature": 4,
+					"CanGetPregnant": false,
+					"DaysToProduce": 1,
+					"ProduceItemIds":[
+						//Spring items - regular
+						{
+							"ItemId": "20", // Leek
+							"Condition":"SEASON spring",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "16", // Horseradish
+							"Condition":"SEASON spring",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "404", // Common Mushroom
+							"Condition":"SEASON spring",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "770", // Mixed Seeds
+							"Condition":"SEASON spring",
+							"MinimumFriendship": 0
+						},
+
+						//Spring items - advanced friendship
+						{
+							"ItemId": "257", // Morel
+							"Condition": "SEASON spring",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "CarrotSeeds", 
+							"Condition": "SEASON spring",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "495", // Spring Seeds
+							"Condition": "SEASON spring",
+							"MinimumFriendship": 350
+						},
+
+						//Summer items - regular
+						{
+							"ItemId": "404", // Common Mushroom
+							"Condition":"SEASON summer",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "259", // Fiddlehead Fern
+							"Condition":"SEASON summer",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "396", // Spiceberry
+							"Condition":"SEASON summer",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "770", // Mixed Seeds
+							"Condition":"SEASON summer",
+							"MinimumFriendship": 0
+						},
+
+						//Summer items - advanced friendship
+						{
+							"ItemId": "420", // Red Mushroom
+							"Condition": "SEASON summer",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "SummerSquashSeeds", 
+							"Condition": "SEASON summer",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "496", // Summer Seeds
+							"Condition": "SEASON summer",
+							"MinimumFriendship": 350
+						},
+
+						//Fall items - regular
+						{
+							"ItemId": "404", // Common Mushroom
+							"Condition":"SEASON fall",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "770", // Mixed Seeds
+							"Condition":"SEASON fall",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "408", // Hazelnut
+							"Condition":"SEASON fall",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "281", // Chanterelle
+							"Condition":"SEASON fall",
+							"MinimumFriendship": 0
+						},
+
+						//Fall items - advanced friendship
+						{
+							"ItemId": "422", // Purple Mushroom
+							"Condition": "SEASON fall",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "420", // Red Mushroom
+							"Condition": "SEASON fall",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "BroccoliSeeds",
+							"Condition": "SEASON fall",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "497", // Fall Seeds
+							"Condition": "SEASON fall",
+							"MinimumFriendship": 350
+						},
+
+						//Winter items - regular
+						{
+							"ItemId": "416", // Snow Yam
+							"Condition":"SEASON winter",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "412", // Winter Root
+							"Condition":"SEASON winter",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "283", // Holly
+							"Condition":"SEASON winter",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "770", // Mixed Seeds
+							"Condition":"SEASON winter",
+							"MinimumFriendship": 0
+						},
+
+						//Winter items - advanced friendship
+						{
+							"ItemId": "430", // Truffle
+							"Condition": "SEASON winter",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "PowdermelonSeeds",
+							"Condition": "SEASON winter",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "498", // Winter Seeds
+							"Condition": "SEASON winter",
+							"MinimumFriendship": 350
+						},
+
+						//eggnode drops
+						{
+							"ItemId": "{{ModId}}_FarmerEggNode",
+							"MinimumFriendship":400
+						}
+					],
+
+					"FriendshipForFasterProduce": 250,
+					"HarvestType": "DropOvernight",
+					"Sound": "{{ModId}}_AdultEggSounds",
+					"BabySound": "{{ModId}}_BabyEggSounds",
+					"Texture": "Mods/{{ModId}}/MushroomHatEgg",
+					"BabyTexture": "Mods/{{ModId}}/BabyForagerEgg",
+					"SpriteWidth": 16,
+					"SpriteHeight": 32,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 1,
+					"Skins":[
+						{
+							"ID": "{{ModId}}_FrogHatEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/FrogHatEgg"
+						},
+						{
+							"ID": "{{ModId}}_RainHatEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/RainHatEgg"
+						},
+						{
+							"ID": "{{ModId}}_UmbrellaHatEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/UmbrellaHatEgg"
+						},
+					],
+					"ShadowWhenBaby": {
+							"Visible": true	
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 0,
+					"HappinessDrain":  5,
+				},
+
+			//Farmer Egg breed
+				"{{ModId}}_FarmerEgg":{
+					"DisplayName": "{{i18n:FarmerEgg.Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 1500,
+					"EggItemIds":[
+						"{{ModID}}_FarmerEggNode"
+					],
+					"BirthText": "{{i18n:FarmerEgg.Hatch}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": false,
+					"DaysToProduce": 1,
+					"ProduceItemIds":[
+						//Spring items - regular
+						{
+							"ItemId": "597", // Blue Jazz
+							"Condition":"SEASON spring",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "591", // Tulip
+							"Condition":"SEASON spring",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "192", // Potato
+							"Condition":"SEASON spring",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "24", // Parsnip
+							"Condition":"SEASON spring",
+							"MinimumFriendship": 0
+						},
+
+						//Spring items - advanced friendship
+						{
+							"ItemId": "248", // Garlic
+							"Condition": "SEASON spring",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "433", // Coffee Bean
+							"Condition": "SEASON spring",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "400", // Strawberry
+							"Condition": "SEASON spring",
+							"MinimumFriendship": 350
+						},
+
+						//Summer items - regular
+						{
+							"ItemId": "376", // Poppy
+							"Condition":"SEASON summer",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "593", // Summer Spangle
+							"Condition":"SEASON summer",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "262", // Wheat
+							"Condition":"SEASON summer",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "264", // Radish
+							"Condition":"SEASON summer",
+							"MinimumFriendship": 0
+						},
+
+						//Summer items - advanced friendship
+						{
+							"ItemId": "258", // Blueberry
+							"Condition": "SEASON summer",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "260", // Hot Pepper
+							"Condition": "SEASON summer",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "268", // Starfruit
+							"Condition": "SEASON summer",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "433", // Coffee Bean
+							"Condition": "SEASON summer",
+							"MinimumFriendship": 350
+						},
+
+						//Fall items - regular
+						{
+							"ItemId": "278", // Bok Choy
+							"Condition":"SEASON fall",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "280", // Yam
+							"Condition":"SEASON fall",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "421", // Sunflower
+							"Condition":"SEASON fall",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "262", // Wheat
+							"Condition":"SEASON fall",
+							"MinimumFriendship": 0
+						},
+
+						//Fall items - advanced friendship
+						{
+							"ItemId": "595", // Fairy Rose
+							"Condition": "SEASON fall",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "398", // Grape
+							"Condition": "SEASON fall",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "284", // Beet
+							"Condition": "SEASON fall",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "276", // Pumpkin
+							"Condition": "SEASON fall",
+							"MinimumFriendship": 350
+						},
+
+						//Winter items - regular
+						{
+							"ItemId": "78", // Cave Carrot
+							"Condition":"SEASON winter",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "412", // Winter Root
+							"Condition":"SEASON winter",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "416", // Snow Yam
+							"Condition":"SEASON winter",
+							"MinimumFriendship": 0
+						},
+
+						//Winter items - advanced friendship
+						{
+							"ItemId": "Powdermelon",
+							"Condition": "SEASON winter",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "498", // Winter Seeds
+							"Condition": "SEASON winter",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "885", // Fiber Seeds
+							"Condition": "SEASON winter",
+							"MinimumFriendship": 350
+						},
+
+						//eggnode drops
+						{
+							"ItemId": "{{ModId}}_BuffEggNode",
+							"MinimumFriendship": 400
+						}
+					],
+
+					"FriendshipForFasterProduce": 250,
+					"HarvestType": "DropOvernight",
+					"Sound": "{{ModId}}_AdultEggSounds",
+					"BabySound": "{{ModId}}_BabyEggSounds",
+					"Texture": "Mods/{{ModId}}/StrawHatEgg",
+					"BabyTexture": "Mods/{{ModId}}/BabyFarmerEgg",
+					"SpriteWidth": 16,
+					"SpriteHeight": 32,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 1,
+					"Skins":[
+						{
+							"ID": "{{ModId}}_SunglassesEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/SunglassesEgg"
+						},
+						{
+							"ID": "{{ModId}}_FlowerPotEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/FlowerPotEgg"
+						},
+						{
+							"ID": "{{ModId}}_BirdEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/BirdEgg"
+						},
+					],
+					"ShadowWhenBaby": {
+							"Visible": true	
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 0,
+					"HappinessDrain":  5,
+				},
+
+			//Buff Egg breed
+				"{{ModId}}_BuffEgg":{
+					"DisplayName": "{{i18n:BuffEgg.Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 2000,
+					"EggItemIds":[
+						"{{ModID}}_BuffEggNode"
+					],
+					"BirthText": "{{i18n:BuffEgg.Hatch}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": false,
+					"DaysToProduce": 1,
+					"ProduceItemIds":[
+						//Cooked dishes - regular
+						{
+							"ItemId": "201", // Complete Breakfast
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "205", // Fried Mushrooms
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "219", // Trout Soup
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "230", // Red Plate
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "231", // Eggplant Parmesan
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "235", // Autumn's Bounty
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "237", // Super Meal
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "239", // Stuffing
+							"MinimumFriendship": 0
+						},
+
+						//Cooked dishes - advanced friendship
+						{
+							"ItemId": "240", // Farmer's Lunch
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "241", // Survival Burger
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "244", // Roots Platter
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "242", // Dish O' The Sea
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "728", // Fish Stew
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "729", // Escargot
+							"MinimumFriendship": 350
+						},
+
+						//eggnode drops
+						{
+							"ItemId": "{{ModId}}_ProspectorEggNode",
+							"MinimumFriendship": 400
+						}
+					],
+
+					"FriendshipForFasterProduce": 250,
+					"HarvestType": "DropOvernight",
+					"Sound": "{{ModId}}_AdultEggSounds",
+					"BabySound": "{{ModId}}_BabyEggSounds",
+					"Texture": "Mods/{{ModId}}/CoconutEgg",
+					"BabyTexture": "Mods/{{ModId}}/BabyBuffEgg",
+					"SpriteWidth": 16,
+					"SpriteHeight": 32,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 1,
+					"Skins":[
+						{
+							"ID": "{{ModId}}_JunimoEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/JunimoEgg"
+						},
+						{
+							"ID": "{{ModId}}_GlassesEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/GlassesEgg"
+						},
+						{
+							"ID": "{{ModId}}_PanEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/PanEgg"
+						},
+					],
+					"ShadowWhenBaby": {
+							"Visible": true	
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 0,
+					"HappinessDrain":  5,
+				},
+
+			//Prospector Egg Breed
+				"{{ModId}}_ProspectorEgg":{
+					"DisplayName": "{{i18n:ProspectorEgg.Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 2500,
+					"EggItemIds":[
+						"{{ModID}}_ProspectorEggNode"
+					],
+					"BirthText": "{{i18n:ProspectorEgg.Hatch}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": false,
+					"DaysToProduce": 1,
+					"ProduceItemIds":[
+						//Ores & minerals - regular
+						{
+							"ItemId": "RANDOM_ITEMS (O)",
+							"Condition": "ITEM_CATEGORY Target -12",
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "382", // Coal
+							"MinimumFriendship": 0,
+						},
+						{
+							"ItemId": "378", // Copper Ore
+							"MinimumFriendship": 0,
+						},
+						{
+							"ItemId": "380", // Iron Ore
+							"MinimumFriendship": 0,
+						},
+						{
+							"ItemId": "384", // Gold Ore
+							"MinimumFriendship": 0,
+						},
+						{
+							"ItemId": "86", // Earth Crystal
+							"MinimumFriendship": 0,
+						},
+						{
+							"ItemId": "84", // Frozen Tear
+							"MinimumFriendship": 0,
+						},
+
+						//Gems - advanced friendship
+						{
+							"ItemId": "64", // Ruby
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "66", // Amethyst
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "60", // Emerald
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "62", // Aquamarine
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "70", // Jade
+							"MinimumFriendship": 350
+						},
+
+						//eggnode drops
+						{
+							"ItemId": "{{ModId}}_UncannyEggNode",
+							"MinimumFriendship": 400
+						}
+					],
+
+					"FriendshipForFasterProduce": 250,
+					"HarvestType": "DropOvernight",
+					"Sound": "{{ModId}}_AdultEggSounds",
+					"BabySound": "{{ModId}}_BabyEggSounds",
+					"Texture": "Mods/{{ModId}}/HelmetEgg",
+					"BabyTexture": "Mods/{{ModId}}/BabyProspectorEgg",
+					"SpriteWidth": 16,
+					"SpriteHeight": 32,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 1,
+					"Skins":[
+						{
+							"ID": "{{ModId}}_FeatherEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/FeatherEgg"
+						},
+						{
+							"ID": "{{ModId}}_BoxEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/BoxEgg"
+						},
+						{
+							"ID": "{{ModId}}_TrafficConeEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/TrafficConeEgg"
+						},
+					],
+					"ShadowWhenBaby": {
+							"Visible": true	
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 0,
+					"HappinessDrain":  5,
+				},
+
+			//Uncanny Egg breed
+				"{{ModId}}_UncannyEgg":{
+					"DisplayName": "{{i18n:UncannyEgg.Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 3000,
+					"EggItemIds":[
+						"{{ModID}}_UncannyEggNode"
+					],
+					"BirthText": "{{i18n:UncannyEgg.Hatch}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": false,
+					"DaysToProduce": 1,
+					"ProduceItemIds":[
+						//Items - regular
+						{
+							"ItemId": "107", // Dinosaur Egg
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "114", // Ancient Seed
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "768", // Solar Essence
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "769", // Void Essence
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "767", // Bat Wing
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "386", // Iridium Ore
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "72", // Diamond
+							"MinimumFriendship": 0
+						},
+
+						//Items - advanced friendship
+						{
+							"ItemId": "848", // Cinder Shard
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "797", // Pearl
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "SeaJelly",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "RiverJelly",
+							"MinimumFriendship": 350
+						},
+						{
+							"ItemId": "CaveJelly",
+							"MinimumFriendship": 350
+						},
+
+						//eggnode drops
+						{
+							"ItemId": "{{ModId}}_SpecialEggNode",
+							"MinimumFriendship": 400
+						}
+					],
+
+					"FriendshipForFasterProduce": 250,
+					"HarvestType": "DropOvernight",
+					"Sound": "{{ModId}}_AdultEggSounds",
+					"BabySound": "{{ModId}}_BabyEggSounds",
+					"Texture": "Mods/{{ModId}}/StarEgg",
+					"BabyTexture": "Mods/{{ModId}}/BabyUncannyEgg",
+					"SpriteWidth": 16,
+					"SpriteHeight": 32,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 1,
+					"Skins":[
+						{
+							"ID": "{{ModId}}_QiGlassesEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/QiGlassesEgg"
+						},
+						{
+							"ID": "{{ModId}}_WitchHatEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/WitchHatEgg"
+						},
+						{
+							"ID": "{{ModId}}_DevilHatEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/DevilHatEgg"
+						},
+						{
+							"ID": "{{ModId}}_SpookyMaskEgg",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/SpookyMaskEgg"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": true	
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 0,
+					"HappinessDrain":  5,
+				},
+
+			//Super Special Egg
+				"{{ModId}}_BenHatEgg":{
+					"DisplayName": "{{i18n:BenHatEgg.Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 3000,
+					"EggItemIds":[
+						"{{ModID}}_SpecialEggNode"
+					],
+					"BirthText": "{{i18n:BenHatEgg.Hatch}}",
+					"DaysToMature": 3,
+					"CanGetPregnant": false,
+					"DaysToProduce": 1,
+					"ProduceItemIds":[
+						//Items - regular
+						{
+							"ItemId": "74", // Prismatic Shard
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "879", // Monster Musk
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "787", // Battery Pack
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "872", // Fairy Dust
+							"MinimumFriendship": 0
+						},
+						{
+							"ItemId": "909", // Radioactive Ore
+							"MinimumFriendship": 0
+						},
+
+						//Items - advanced friendship
+						{
+							"ItemId": "MysticSyrup",
+							"MinimumFriendship": 500
+						},
+						{
+							"ItemId": "PrizeTicket",
+							"MinimumFriendship": 500
+						},
+						{
+							"ItemId": "StardropTea",
+							"MinimumFriendship": 500
+						},
+						{
+							"ItemId": "852", // Dragon Tooth
+							"MinimumFriendship": 500
+						},
+						{
+							"ItemId": "GoldenAnimalCracker",
+							"MinimumFriendship": 500
+						},
+						{
+							"ItemId": "BlueGrassStarter",
+							"MinimumFriendship": 500
+						}
+					],
+
+					"FriendshipForFasterProduce": 250,
+					"HarvestType": "DropOvernight",
+					"Sound": "{{ModId}}_AdultEggSounds",
+					"BabySound": "{{ModId}}_BabyEggSounds",
+					"Texture": "Mods/{{ModId}}/BenHatEgg",
+					"BabyTexture": "Mods/{{ModId}}/BabyBenEgg",
+					"SpriteWidth": 16,
+					"SpriteHeight": 32,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 1,
+					"ShadowWhenBaby": {
+							"Visible": true	
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 0,
+					"HappinessDrain":  5,
+				},			
+			}
+		}
+	]
+}

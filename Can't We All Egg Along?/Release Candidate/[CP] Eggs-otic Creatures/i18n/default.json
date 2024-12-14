@@ -1,0 +1,40 @@
+{
+    //config
+        "Config.Description": "Toggles whether EggNodes are required to complete the shipping collection for perfection. Defaults to true.",
+        
+    //creature names
+	
+        "ForagerEgg.Name": "Forager Eggie",
+        "FarmerEgg.Name": "Farmer Eggie",
+        "BuffEgg.Name": "Buff Eggie",
+        "ProspectorEgg.Name": "Prospector Eggie",
+        "UncannyEgg.Name": "Uncanny Eggie",
+        "BenHatEgg.Name": "Super rare, special Eggie",
+
+    //creature stuff
+        "ForagerEgg.Hatch": "The odd egg-shaped node has hatched, revealing a...small egg creature? This Eggie likes to root around for forage.",
+        "FarmerEgg.Hatch": "A new Farmer Eggie has hatched...and wields a pitchfork? This Eggie will bring you various crop items.",
+        "BuffEgg.Hatch": "A new Buff Eggie has hatched, ready to find items to help you on your adventures.",
+        "ProspectorEgg.Hatch": "A new Prospector Eggie has hatched. Tenacious, it will bring you various ores, minerals, and gems.",
+        "UncannyEgg.Hatch": "An Uncanny Eggie appears in a small puff of smoke. As it grows into its power, it will produce magical items.",
+        "BenHatEgg.Hatch": "A new Eggie hatches and rolls around, searching for pats. How did it get Gunther's hat?",
+
+    //eggnode stuff
+        "ForagerEggNode.Name": "Forager EggNode",
+        "ForagerEggNode.Description": "An odd, egg-like object. Maybe it could be incubated?",
+        "FarmerEggNode.Name": "Farmer EggNode",
+        "FarmerEggNode.Description": "It smells faintly of hay. You should put it in the incubator.",
+        "BuffEggNode.Name": "Buff EggNode",
+        "BuffEggNode.Description": "It radiates energy. Incubate it and see what happens!",
+        "ProspectorEggNode.Name": "Prospector EggNode",
+        "ProspectorEggNode.Description": "It twinkles in the light. Incubate it and see what happens!",
+        "UncannyEggNode.Name": "Uncanny EggNode",
+        "UncannyEggNode.Description": "It pulses with a strange low light. Incubate it and see what happens!",
+        "SpecialEggNode.Name": "Special EggNode",
+        "SpecialEggNode.Description": "It makes a soft humming noise and tries to roll around. Definitely incubate this!",
+
+    //event
+        "Event.EggNodeArrival.01": "Good morning, @!$h#$b#Sorry to drop by unannounced, but I have something for you.$0",
+        "Event.EggNodeArrival.02": "Yesterday, I received an unexpected crate from an old aquaintance living in the Fern Islands. These were in the crate, along with a note.[Logophile.EggAlong_ForagerEggNode]$h#$b#It was pretty cryptic, but I think that these could be incubated?$0#$b#I don't have room in my coop, but I thought you might! If you're successful, I'll offer the rest for sale in my shop.#$b#Okay, I'm off to find a treat for the goats. Have a great day!$h"
+         
+}

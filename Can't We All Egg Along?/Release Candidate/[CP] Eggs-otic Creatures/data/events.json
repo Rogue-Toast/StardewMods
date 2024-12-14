@@ -1,0 +1,13 @@
+{
+  "Changes": [
+
+    {
+      "LogName": "EggNode arrival event",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "{{ModId}}.EggNodeArrival/t 600 1200/n EggNodeMailFlag": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/skippable/pause 800/speak Marnie \"{{i18n:Event.EggNodeArrival.01}}\"/pause 500/emote farmer 8/pause 500/speak Marnie \"{{i18n:Event.EggNodeArrival.02}}\"/pause 500/emote farmer 32/end"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+	"Changes": [
+		{
+      		"LogName": "Add Forager EggNode to Marnie's shop",
+      		"Action": "EditData",
+	  		"Target": "Data/Shops",
+      		"TargetField": [ "AnimalShop", "Items" ],
+      		"Entries": {
+				"{{ModId}}_ForagerEggNode": {
+					"Id": "{{ModId}}_ForagerEggNode",
+					"ItemId": "{{ModId}}_ForagerEggNode",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Any Logophile.EggAlong.EggNodeArrival",
+					"Price": 250,
+					"IgnoreShopPriceModifiers": true
+				},
+
+				"{{ModId}}_FarmerEggNode": {
+					"Id": "{{ModId}}_FarmerEggNode",
+					"ItemId": "{{ModId}}_FarmerEggNode",
+					"Condition": "PLAYER_STAT Current chickenEggsLayed 50",
+					"Price": 500,
+					"IgnoreShopPriceModifiers": true
+				},
+
+				"{{ModId}}_BuffEggNode": {
+					"Id": "{{ModId}}_BuffEggNode",
+					"ItemId": "{{ModId}}_BuffEggNode",
+					"Condition": "PLAYER_STAT Current chickenEggsLayed 100",
+					"Price": 750,
+					"IgnoreShopPriceModifiers": true
+				},
+
+				"{{ModId}}_ProspectorEggNode": {
+					"Id": "{{ModId}}_ProspectorEggNode",
+					"ItemId": "{{ModId}}_ProspectorEggNode",
+					"Condition": "PLAYER_STAT Current chickenEggsLayed 150",
+					"Price": 1000,
+					"IgnoreShopPriceModifiers": true
+				},
+
+				"{{ModId}}_UncannyEggNode": {
+					"Id": "{{ModId}}_UncannyEggNode",
+					"ItemId": "{{ModId}}_UncannyEggNode",
+					"Condition": "PLAYER_STAT Current chickenEggsLayed 200",
+					"Price": 1500,
+					"IgnoreShopPriceModifiers": true
+				},
+			}
+		}
+	]
+}

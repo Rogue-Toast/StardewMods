@@ -1,0 +1,13 @@
+﻿{
+	"Name": "Eggs-otic Creatures",
+	"Author": "Logophile & SweetPanda",
+	"Version": "1.0.0",
+	"Description": "Adds hat-wearing eggs as custom farm creatures.",
+	"UniqueID": "Logophile.EggsoticCreatures",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": [""],
+	"ContentPackFor": {
+		"UniqueID": "PathosChild.ContentPatcher",
+        "MinimumVersion": "2.4.0"
+	}
+}
