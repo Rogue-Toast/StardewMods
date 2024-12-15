@@ -1,7 +1,4 @@
 {
-    //config
-        "Config.Description": "Toggles whether EggNodes are required to complete the shipping collection for perfection. Defaults to true.",
-        
     //creature names
 	
         "ForagerEgg.Name": "Forager Eggie",
@@ -35,6 +32,6 @@
 
     //event
         "Event.EggNodeArrival.01": "Good morning, @!$h#$b#Sorry to drop by unannounced, but I have something for you.$0",
-        "Event.EggNodeArrival.02": "Yesterday, I received an unexpected crate from an old aquaintance living in the Fern Islands. These were in the crate, along with a note.[Logophile.EggAlong_ForagerEggNode]$h#$b#It was pretty cryptic, but I think that these could be incubated?$0#$b#I don't have room in my coop, but I thought you might! If you're successful, I'll offer the rest for sale in my shop.#$b#Okay, I'm off to find a treat for the goats. Have a great day!$h"
+        "Event.EggNodeArrival.02": "Yesterday, I received an unexpected crate from an old aquaintance living in the Fern Islands. These were in the crate, along with a note.[Logophile.EggsoticCreatures_ForagerEggNode]$h#$b#It was pretty cryptic, but I think that these could be incubated?$0#$b#I don't have room in my coop, but I thought you might! If you're successful, I'll offer the rest for sale in my shop.#$b#Okay, I'm off to find a treat for the goats. Have a great day!$h"
          
 }

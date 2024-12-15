@@ -5,7 +5,7 @@
 		"ShippingCollection": {
 			"AllowValues": "true, false",
 			"Default": "true",
-			"Description": "{{i18n:Config.Description}}"
+			"Description": "Toggles whether EggNodes are required to complete the shipping collection for perfection. Defaults to true."
 		}
 	},
 
