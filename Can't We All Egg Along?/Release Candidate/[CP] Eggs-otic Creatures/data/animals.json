@@ -565,6 +565,9 @@
 							"ID": "{{ModId}}_PanEgg",
 							"Texture": "Mods/{{ModId}}/PanEgg"
 						},
+						{	"ID": "{{ModID}}_CoconutHatEgg",
+							"Texture": "Mods/{{ModID}}/CoconutHatEgg"
+						},
 					],
 					"ShadowWhenBaby": {
 							"Visible": true	
