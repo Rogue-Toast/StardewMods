@@ -4,7 +4,7 @@
   "Version": "1.0.0",
   "Description": "A collection of retextures for chests n stuff.",
   "UniqueID": "logophile.hodgepodge",
-  "UpdateKeys": ["Nexus: 26953"],
+  "UpdateKeys": ["Nexus:26953@AT"],
   "Dependencies": [],
   "ContentPackFor": {
     "UniqueID": "PeacefulEnd.AlternativeTextures",
