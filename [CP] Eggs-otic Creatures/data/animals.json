@@ -541,7 +541,7 @@
 					"HarvestType": "DropOvernight",
 					"Sound": "{{ModId}}_AdultEggSounds",
 					"BabySound": "{{ModId}}_BabyEggSounds",
-					"Texture": "Mods/{{ModId}}/CoconutEgg",
+					"Texture": "Mods/{{ModId}}/CoconutHatEgg",
 					"BabyTexture": "Mods/{{ModId}}/BabyBuffEgg",
 					"SpriteWidth": 16,
 					"SpriteHeight": 32,
@@ -565,7 +565,8 @@
 							"ID": "{{ModId}}_PanEgg",
 							"Texture": "Mods/{{ModId}}/PanEgg"
 						},
-						{	"ID": "{{ModID}}_CoconutHatEgg",
+						{	
+							"ID": "{{ModID}}_CoconutHatEgg",
 							"Texture": "Mods/{{ModID}}/CoconutHatEgg"
 						},
 					],
@@ -796,8 +797,8 @@
 							"Texture": "Mods/{{ModId}}/WitchHatEgg"
 						},
 						{
-							"ID": "{{ModId}}_DevilHatEgg",
-							"Texture": "Mods/{{ModId}}/DevilHatEgg"
+							"ID": "{{ModId}}_DevilEgg",
+							"Texture": "Mods/{{ModId}}/DevilEgg"
 						},
 						{
 							"ID": "{{ModId}}_SpookyMaskEgg",

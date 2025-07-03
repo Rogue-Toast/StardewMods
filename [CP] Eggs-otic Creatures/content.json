@@ -1,5 +1,5 @@
 {
-	"Format": "2.4.0",
+	"Format": "2.7.0",
 
 	"ConfigSchema": {
 		"ShippingCollection": {
@@ -67,25 +67,6 @@
 			"LogName": "Include shop data",
 			"Action": "Include",
 			"FromFile": "data/shops.json"
-		},
-		{
-			"Action": "EditData",
-  			"Target": "Data/TriggerActions",
-  			"Entries": {
-    			"{{ModId}}_EventPrecondition1": {
-      				"Id": "{{ModId}}_EventPrecondition1",
-      				"Trigger": "DayEnding",
-      				"Condition": "BUILDINGS_CONSTRUCTED All \"Big Coop\"",
-      				"Action": "AddMail Current EggNodeMailFlag received"
-    		},
-
-    			"{{ModId}}_EventPrecondition2": {
-      				"Id": "{{ModId}}_EventPrecondition2",
-      				"Trigger": "DayEnding",
-      				"Condition": "BUILDINGS_CONSTRUCTED All \"Deluxe Coop\"",
-      				"Action": "AddMail Current EggNodeMailFlag1 received"
-    			}
-  			}
 		}
 	]
 }
