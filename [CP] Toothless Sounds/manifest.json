@@ -1,8 +1,8 @@
 {
     "Name": "Toothless Sounds",
     "Author": "Logophile",
-    "Version": "2.0.0",
-    "Description": "Changes the cat's meow to Toothless sounds, to go along with the mod Stardew Toothless",
+    "Version": "2.1.0",
+    "Description": "Changes pet cat's sounds to Toothless' mrwowls",
     "UniqueID": "Logophile.ToothlessSounds",
     "UpdateKeys": [ "Nexus: 17815" ],
     "ContentPackFor": {

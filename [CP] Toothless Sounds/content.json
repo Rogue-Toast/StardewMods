@@ -1,5 +1,5 @@
 {
-    "Format": "2.0.0",
+    "Format": "2.7.0",
     "Changes": [
         {
             "LogName": "Add sound cue",
@@ -15,13 +15,28 @@
             }
         },
         {
-            "LogName": "Change pet sound",
+            "LogName": "Change pet cat sound",
             "Action": "EditData",
             "Target": "Data/Pets",
             "TargetField": ["Cat"],
             "Entries": {
                 "BarkSound": "{{ModID}}_toothless",
                 "ContentSound": "{{ModID}}_toothless"
+            }
+        },
+
+    //Compat for Custom Toothless Dragon Pet by strawhatwem
+        {
+            "LogName": "Change Toothless Dragon pet sounds",
+            "Action": "EditData",
+            "Target": "Data/Pets",
+            "TargetField": ["Wem.ToothlessPet"],
+            "Entries": {
+                "BarkSound": "{{ModID}}_toothless",
+                "ContentSound": "{{ModID}}_toothless"
+            },
+            "When": {
+                "HasMod |contains=Wem.Toothless": true
             }
         }
     ]
