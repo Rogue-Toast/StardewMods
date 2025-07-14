@@ -1,7 +1,7 @@
 {
-    "Name": "Toothless Sounds",
+    "Name": "[CP] Toothless Sounds",
     "Author": "Logophile",
-    "Version": "2.1.0",
+    "Version": "2.1.1",
     "Description": "Changes pet cat's sounds to Toothless' mrwowls",
     "UniqueID": "Logophile.ToothlessSounds",
     "UpdateKeys": [ "Nexus: 17815" ],

@@ -1,5 +1,14 @@
 {
     "Format": "2.7.0",
+
+    "ConfigSchema": {
+        "Enabled": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Toggles pet cat sounds on and off."
+            }   
+    },
+
     "Changes": [
         {
             "LogName": "Add sound cue",
@@ -22,6 +31,9 @@
             "Entries": {
                 "BarkSound": "{{ModID}}_toothless",
                 "ContentSound": "{{ModID}}_toothless"
+            },
+            "When": {
+                "Enabled": "true"
             }
         },
 
