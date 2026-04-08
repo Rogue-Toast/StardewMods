@@ -1,0 +1,44 @@
+{
+	"Name": "Stardew Valley Flower Show",
+	"Author": "Logophile",
+	"Version": "1.0.2",
+	"Description": "A new two-day summer festival with new crops, trees, and decor.",
+	"UniqueID": "Logophile.SVFS",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": ["Nexus: 44202"],
+	"ContentPackFor": {
+		"UniqueId": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "2.0.0"
+	},
+
+	"Dependencies": [
+		{
+			"UniqueID": "Spiderbuttons.BETAS",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "furyx639.CustomBush",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "hxw.tilesheets",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "Lumisteria.LumiTilesheetsIndoor",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "Lumisteria.TtilesheetsOutdoor",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Aimon111.BeachAreas",
+			"IsRequired": false
+		}
+	]
+}

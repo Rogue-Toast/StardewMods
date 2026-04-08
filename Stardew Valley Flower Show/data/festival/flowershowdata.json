@@ -1,0 +1,234 @@
+{
+    "Changes": [
+        {
+            "LogName": "Stardew Valley Flower Show",
+            "Action": "EditData",
+            "Target": "Data/PassiveFestivals",
+            "Entries": {
+                "{{ModId}}_FlowerShow": {
+                    "DisplayName": "{{i18n:SVFS.FlowerShow.name}}",
+                    "Season": "Summer",
+                    "StartDay": "6",
+                    "EndDay": "7",
+                    "StartTime": "1000",
+                    "StartMessage": "{{i18n:SVFS.StartShow}}",
+                    "ShowOnCalendar": true
+                }
+            },    
+            "When": {
+                "HasReadLetter: anyPlayer |contains=SVFS.Invitation": true
+            }
+        },
+        {
+            "LogName": "Festival weather",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_SVFSWeather": {
+                    "Id": "{{ModId}}_SVFSWeather",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON_DAY summer 5 summer 6",
+                    "Action": "Spiderbuttons.BETAS_WeatherForTomorrow Default Sun",
+                    "MarkActionApplied": false
+                }
+            }
+        },
+    // DIALOGUE - CTs
+        {
+            "LogName": "Pre-festival CT",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail, Characters/Dialogue/Alex, Characters/Dialogue/Caroline, Characters/Dialogue/Clint, Characters/Dialogue/Demetrius, Characters/Dialogue/Elliott, Characters/Dialogue/Emily, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Gus, Characters/Dialogue/Haley, Characters/Dialogue/Harvey, Characters/Dialogue/Jas, Characters/Dialogue/Jodi, Characters/Dialogue/Leah, Characters/Dialogue/Lewis, Characters/Dialogue/Linus, Characters/Dialogue/Marnie, Characters/Dialogue/Maru, Characters/Dialogue/Pam, Characters/Dialogue/Penny, Characters/Dialogue/Pierre, Characters/Dialogue/Robin, Characters/Dialogue/Sam, Characters/Dialogue/Sandy, Characters/Dialogue/Sebastian, Characters/Dialogue/Shane, Characters/Dialogue/Vincent, Characters/Dialogue/Willy, Characters/Dialogue/Wizard",
+            "Entries": {
+                "SVFS_FlowerShowHype": "{{i18n:SVFS.CT.{{TargetWithoutPath}}.FlowerShowHype}}"
+                }
+        },
+        {
+            "LogName": "Post-festival CT",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex, Characters/Dialogue/Caroline, Characters/Dialogue/Elliott, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Jodi, Characters/Dialogue/Leah, Characters/Dialogue/Lewis, Characters/Dialogue/Pierre, Characters/Dialogue/Sandy",
+            "Entries": {
+                "SVFS_FlowerShowOver": "{{i18n:SVFS.CT.{{TargetWithoutPath}}.FlowerShowOver}}"
+            }
+        },
+
+    // SCHEDULE DIALOGUE
+        {
+            "LogName": "Add schedule dialogue - Abigail",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Abigail",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Abigail.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Alex",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Alex",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Alex.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Caroline",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Caroline",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Caroline.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Demetrius",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Demetrius",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Demetrius.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Elliott",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Elliott",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Elliott.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Emily",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Emily",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Emily.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Evelyn",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Evelyn",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Evelyn.01}}",
+                "FlowerShow.001": "{{i18n:SVFS.FS.Evelyn.02}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - George",
+            "Action": "EditData",
+            "Target": "Strings/schedules/George",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.George.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Gus",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Gus",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Gus.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Haley",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Haley",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Haley.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Harvey",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Harvey",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Harvey.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Jas",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Jas",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Jas.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Jodi",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Jodi",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Jodi.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Leah",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leah",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Leah.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Lewis",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Lewis",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Lewis.01}}",
+                "FlowerShow.001": "{{i18n:SVFS.FS.Lewis.02}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Linus",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Linus",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Linus.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Marnie",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Marnie",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Marnie.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Maru",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Maru",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Maru.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Penny",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Penny",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Penny.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Pierre",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Pierre",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Pierre.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Robin",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Robin",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Robin.01}}"
+            }
+        },
+        {
+            "LogName": "Add schedule dialogue - Willy",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Willy",
+            "Entries": {
+                "FlowerShow.000": "{{i18n:SVFS.FS.Willy.01}}"
+            }
+        },
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "Changes": [
+        // Add Blue Puya Bush
+        {
+            "LogName": "Add Blue Puya to Custom Bush data",
+            "Action": "EditData",
+            "Target": "furyx639.CustomBush/Data",
+            "Entries": {
+                "(O){{ModId}}_BluePuyaCutting": {
+                    "DisplayName": "{{i18n:SVFS.BluePuyaBush.Name}}",
+                    "Description": "{{i18n:SVFS.BluePuyaBush.Description}}",
+                    "AgeToProduce": 28,
+                    "DayToBeginProducing": 0,
+                    "Seasons": [ "summer" ],
+                    "ItemsProduced": [
+                        {
+                            "ItemId": "(O){{ModId}}_BluePuyaFlower",
+                            "Chance": 1.0,
+                            "MinStack": 3,
+                            "MaxStack": 5,
+                            "QualityModifiers": [
+                                {
+                                    "Modification": "Add",
+                                    "RandomAmount": [ 0, 0, 0, 0, 1, 1, 2, 2, 3, 3]
+                                }
+                            ]
+                        }
+                    ],
+                    "Texture": "Mods/{{ModId}}/bluepuya",
+                    "TextureSpriteRow": 0
+                }
+            }
+        }
+    ]
+}

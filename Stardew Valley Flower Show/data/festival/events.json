@@ -1,0 +1,63 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add pre-Flower Show event",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_EvelynIsInvited/GameStateQuery DATE_RANGE spring 23 1 summer 2 1/!FestivalDay/Time 0600 1600/Weather sunny": "SettlingIn/9 57
+                /farmer 2 54 1 Evelyn 14 60 3 Caroline 10 60 1 Jodi 12 61 0/pause 100/advancedMove farmer false 12 0 0 5 -2 0 2 100/emote Evelyn 40/textAboveHead Caroline \"{{i18n:SVFS.Invited.Caroline.02}}\" true
+                /pause 2500/textAboveHead Jodi \"{{i18n:SVFS.Invited.Jodi.02}}\" true/pause 2500/
+                /textAboveHead Evelyn \"{{i18n:SVFS.Invited.Evelyn.01}}\"/pause 2500/emote Caroline 32 true/emote Jodi 20 true/pause 2500/
+                waitForAllStationary/speak Jodi \"{{i18n:SVFS.Invited.Jodi.01}}\"
+                /move Evelyn 0 -1 0/move Evelyn -1 0 3/faceDirection farmer 1/animate Evelyn false false 200 15 14/stopAnimation Evelyn/pause 50/globalFade/viewport 999 999/pause 50
+                /changeToTemporaryMap {{ModId}}_EvelynInvitation true/viewport 10 6 clamp/bgColor 0 0 0/ambientLight 0 0 0/pause 4000
+                /message \"{{i18n:SVFS.EvelynLetter.text}}\"/changeLocation Town true/viewport 12 60 true/skippable/pause 500
+                /faceDirection farmer 2/emote farmer 32 true/faceDirection Evelyn 2 true/speak Evelyn \"{{i18n:SVFS.Invited.Evelyn.02}}\"
+                /speak Caroline \"{{i18n:SVFS.Invited.Caroline.01}}\"
+                /speak Jodi \"{{i18n:SVFS.Invited.Jodi.03}}\"/pause 500
+                /textAboveHead Caroline \"{{i18n:SVFS.Invited.Caroline.03}}\"/pause 1000
+                /speak Evelyn \"{{i18n:SVFS.Invited.Evelyn.03}}\"
+                /jump farmer 5/emote farmer 20 true/emote Caroline 20 true/emote Jodi 20 true/pause 1500/end position 12 59"
+            }
+        },
+        {
+            "LogName": "Add Flower Show final event",
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_FlowerShowForest",
+            "Entries": {
+                "{{ModId}}_FlowerShowFinalEvent/Season Summer/DayOfMonth 7/Time 1000 1600": "movie_classic/14 37/
+                /farmer 20 38 3 Leah 20 36 3 Jas 20 35 3 Marnie 20 34 3 Willy 23 41 0 Haley 19 40 0 Vincent 18 41 0 Sam 17 41 0 George 17 39 0 Evelyn 16 39 0 Pierre 15 40 0 Caroline 14 39 0 Jodi 13 39 0 Abigail 14 41 0 Emily 12 40 0 Sandy 11 40 0 Demetrius 9 41 0 Robin 8 41 0 Harvey 6 38 1 Gus 6 37 1 Lewis 10 37 1 Penny 8 36 1 Alex 8 35 1 Linus 7 33 1
+                /addTemporaryActor SVFSSamantha 16 32 16 27 2 true Character/changeName SVFSSamantha Samantha Woodward
+                /addTemporaryActor SVFSCarl 16 32 12 27 2 true Character/changeName SVFSCarl Carl Parker-Hodges
+                /changeToTemporaryMap {{ModId}}_FlowerShowFinalEvent true/viewport 14 34 clamp/bgColor 0 0 0/ambientLight 0 0 0/pause 2500
+                /textAboveHead Jodi \"{{i18n:SVFS.FinalShow.Jodi.01}}\"/emote Penny 20 true/emote George 12 true/pause 2500
+                /emote Caroline 20/textAboveHead Emily \"{{i18n:SVFS.FinalShow.Emily.01}}\"/pause 2500
+                /textAboveHead Jas \"{{i18n:SVFS.FinalShow.Jas.01}}\"/pause 2500/ emote Marnie 20 true/advancedMove SVFSSamantha false 0 3 2 100
+                /speak SVFSSamantha \"{{i18n:SVFS.FinalShow.Samantha.01}}\"/pause 500
+                /textAboveHead George \"{{i18n:SVFS.FinalShow.George.01}}\"/pause 2500/advancedMove SVFSCarl false 0 3 2 100
+                /speak SVFSCarl \"{{i18n:SVFS.FinalShow.Carl.01}}\"/faceDirection SVFSCarl 1/pause 2500
+                /advancedMove SVFSSamantha false 0 5 2 100/
+                /advancedMove SVFSCarl false 0 5 2 100/speak SVFSCarl \"{{i18n:SVFS.FinalShow.Carl.02}}\"/pause 2500
+                /speak SVFSSamantha \"{{i18n:SVFS.FinalShow.Samantha.02}}\"/pause 1500/jump farmer 5/emote farmer 20 true
+                /emote Caroline 20 true/emote Jodi 20 true/emote Emily 20 true/emote Sandy 20 true/emote Haley 20 true/emote Lewis 32 true
+                /emote Gus 32 true/emote Harvey 32 true/emote Pierre 32 true/emote Abigail 20 true/emote Sam 20 true/emote Vincent 20 true
+                /emote Willy 32 true/emote Linus 20 true/emote Jas 20 true/emote Marnie 20 true/emote Leah 20 true/emote Penny 20 true
+                /emote Robin 20 true/emote Demetrius 20 true
+                /textAboveHead Alex \"{{i18n:SVFS.FinalShow.Alex.01}}\"/textAboveHead Evelyn \"{{i18n:SVFS.FinalShow.Evelyn.01}}\"/pause 2500
+                /speak SVFSCarl \"{{i18n:SVFS.FinalShow.Carl.03}}\"/speak Evelyn \"{{i18n:SVFS.FinalShow.Evelyn.02}}\"
+                /textAboveHead Caroline \"{{i18n:SVFS.FinalShow.Caroline.01}}\"/pause 2500
+                /speak SVFSSamantha \"{{i18n:SVFS.FinalShow.Samantha.03}}\"
+                /speak George \"{{i18n:SVFS.FinalShow.George.02}}\"/pause 500/textaboveHead Evelyn \"{{i18n:SVFS.FinalShow.Evelyn.03}}\"/pause 1500
+                /advancedMove Evelyn false 0 -2 -2 0 0 -1 2 100/
+                /advancedMove George false 0 -2 -2 0 0 -1 2 100/advancedMove Jodi false 0 1 4 100/advancedMove Caroline false 0 1 4 100
+                /advancedMove Pierre false 0 1 4 100/advancedMove Haley false 0 -1 -5 0 4 100/textAboveHead Lewis \"{{i18n:SVFS.FinalShow.Lewis.01}}\"/pause 2500
+                /advancedMove SVFSCarl false 0 1 1 0 2 100/advancedMove SVFSSamantha false 0 1 2 100/
+                /waitForAllStationary/addBigProp 14 38 106/proceedPosition Haley/pause 500/playSound cameraNoise/screenFlash .5/pause 50/globalFade/viewport 999 999/pause 50
+                /changeToTemporaryMap {{ModId}}_FSPhoto true/viewport 10 6 clamp/bgColor 0 0 0/ambientLight 0 0 0/pause 4000
+                /message \"{{i18n:SVFS.FSPhoto}}\"/
+                /message \"{{i18n:SVFS.FinalMessage}}\"/end position 59 18"
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="3" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="3">
+ <tileset firstgid="1" name="flowershowtiles" tilewidth="16" tileheight="16" tilecount="400" columns="16">
+  <image source="FlowerShowTiles.png" width="256" height="400"/>
+ </tileset>
+ <layer id="1" name="Front" width="3" height="8">
+  <data encoding="csv">
+340,341,342,
+356,357,358,
+372,373,374,
+0,0,0,
+0,0,0,
+337,338,339,
+353,354,355,
+369,370,371
+</data>
+ </layer>
+ <objectgroup id="2" name="Front"/>
+</map>

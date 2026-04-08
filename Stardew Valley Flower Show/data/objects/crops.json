@@ -1,0 +1,169 @@
+{
+	"Changes": [
+		{
+			"LogName": "Add new flower crops",
+			"Action": "EditData",
+			"Target": "Data/Crops",
+			"Entries": {
+			//Blushing Bride Protea - 12 days
+				"{{ModId}}_BlushingBrideProteaSeeds": {
+					"Seasons": [ "fall" ],
+					"DaysInPhase": [ 1, 2, 3, 3, 3 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_BlushingBrideProtea",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 0
+				},
+
+			//Darwin's Slippers - 8 days
+				"{{ModId}}_DarwinsSlipperSeeds": {
+					"Seasons": [ "winter" ],
+					"DaysInPhase": [ 1, 2, 3, 2 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_DarwinsSlippers",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 2	
+				},
+
+			//Desert Marigold - 7 days
+				"{{ModId}}_DesertMarigoldSeeds": {
+					"Seasons": [ "summer" ],
+					"DaysInPhase": [ 1, 1, 1, 2, 2 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_DesertMarigold",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 4
+				},
+
+			//Nasturtium - 10 days
+				"{{ModId}}_NasturtiumSeeds": {
+					"Seasons": [ "spring", "summer" ],
+					"DaysInPhase": [ 1, 2, 3, 3, 1 ],
+					"RegrowDays": 3,
+					"HarvestItemId": "{{ModId}}_Nasturtium",
+					"ExtraharvestChance": 0.8,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 3,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 6
+				},
+
+			//Painted Tongue - 8 days
+				"{{ModId}}_PaintedTongueSeeds": {
+					"Seasons": [ "spring" ],
+					"DaysInPhase": [ 1, 2, 2, 3 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_PaintedTongue",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 8
+				},
+
+			//Passionflower - 10 days
+				"{{ModId}}_PassionFlowerSeeds": {
+					"Seasons": [ "summer" ],
+					"DaysInPhase": [ 1, 2, 2, 3, 2 ],
+					"RegrowDays": 4,
+					"HarvestItemId": "{{ModId}}_PassionFlower",
+					"ExtraharvestChance": 0.5,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 2,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 10
+				},
+
+			//Persian Lily - 6 Varieties - 9 days
+				"{{ModId}}_CeladonPersianLilySeeds": {
+					"Seasons": [ "spring", "summer" ],
+					"DaysInPhase": [ 1, 2, 2, 2, 2 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_CeladonPersianLily",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 12
+				},
+				"{{ModId}}_MidnightPersianLilySeeds": {
+					"Seasons": [ "spring", "summer" ],
+					"DaysInPhase": [ 1, 2, 2, 2, 2 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_MidnightPersianLily",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 14
+				},
+				"{{ModId}}_SunrisePersianLilySeeds": {
+					"Seasons": [ "spring", "summer" ],
+					"DaysInPhase": [ 1, 2, 2, 2, 2 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_SunrisePersianLily",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 16
+				},
+				"{{ModId}}_SunsetPersianLilySeeds": {
+					"Seasons": [ "spring", "summer" ],
+					"DaysInPhase": [ 1, 2, 2, 2, 2 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_SunsetPersianLily",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 18
+				},
+				"{{ModId}}_StarburstPersianLilySeeds": {
+					"Seasons": [ "spring", "summer" ],
+					"DaysInPhase": [ 1, 2, 2, 2, 2 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_StarburstPersianLily",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 20
+				},
+				"{{ModId}}_ByzantiumPersianLilySeeds": {
+					"Seasons": [ "spring", "summer" ],
+					"DaysInPhase": [ 1, 2, 2, 2, 2 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_ByzantiumPersianLily",
+					"ExtraharvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 22
+				},
+
+			//Sangria St. John's Wort - 6 days
+				"{{ModId}}_SangriaStJohnsWortSeeds": {
+					"Seasons": [ "fall" ],
+					"DaysInPhase": [ 1, 2, 2, 1 ],
+					"RegrowDays": -1,
+					"HarvestItemId": "{{ModId}}_SangriaStJohnsWort",
+					"ExtraharvestChance": 0.3,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 2,
+					"Texture": "{{InternalAssetKey: assets/crops.png}}",
+					"SpriteIndex": 24
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add furniture objects",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_PottedTree1": "{{ModId}}_PottedTree1/decor/1 2/1 1/1/500/2/{{i18n:SVFS.furniture.GlorybowerSpring}}/0/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedTree2": "{{ModId}}_PottedTree2/decor/1 2/1 1/1/500/2/{{i18n:SVFS.furniture.GlorybowerFall}}/1/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedPlant1": "{{ModId}}_PottedPlant1/decor/1 2/1 1/1/250/2/{{i18n:SVFS.furniture.PersianLilyPot}}/2/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedPlant2": "{{ModId}}_PottedPlant2/decor/1 2/1 1/1/300/2/{{i18n:SVFS.furniture.NasturtiumPot}}/3/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedPlant3": "{{ModId}}_PottedPlant3/decor/1 2/1 1/1/250/2/{{i18n:SVFS.furniture.SangriaPot}}/4/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedPlant4": "{{ModId}}_PottedPlant4/decor/1 2/1 1/1/250/2/{{i18n:SVFS.furniture.ProteaPot}}/5/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedPlant5": "{{ModId}}_PottedPlant5/decor/1 2/1 1/1/250/2/{{i18n:SVFS.furniture.PaintedTongue}}/6/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedPlant6": "{{ModId}}_PottedPlant6/decor/2 2/2 1/1/300/2/{{i18n:SVFS.furniture.MarigoldPot}}/7/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedPlant7": "{{ModId}}_PottedPlant7/decor/2 2/2 1/1/400/2/{{i18n:SVFS.furniture.DarwinsSlippersPot}}/9/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedTree3": "{{ModId}}_PottedTree3/decor/2 3/2 1/1/550/2/{{i18n:SVFS.furniture.Plumeria}}/22/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PottedPlant8": "{{ModId}}_PottedPlant8/decor/1 3/1 1/1/400/2/{{i18n:SVFS.furniture.BluePuyaPot}}/24/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_FlowerPainting1": "{{ModId}}_FlowerPainting1/painting/2 2/2 2/1/250/0/{{i18n:SVFS.furniture.PassionFlowerPainting}}/25/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_FlowerPainting2": "{{ModId}}_FlowerPainting2/painting/2 2/2 2/1/250/0/{{i18n:SVFS.furniture.PersianLilyPainting}}/27/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_FlowerPainting3": "{{ModId}}_FlowerPainting3/painting/2 2/2 2/1/250/0/{{i18n:SVFS.furniture.GlorybowerPainting}}/29/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_FlowerPainting4": "{{ModId}}_FlowerPainting4/painting/1 2/1 2/1/150/0/{{i18n:SVFS.furniture.MarigoldPainting}}/31/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_FlowerPainting5": "{{ModId}}_FlowerPainting5/painting/1 2/1 2/1/150/0/{{i18n:SVFS.furniture.BluePuyaPainting}}/32/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PaintingEasel1": "{{ModId}}_PaintingEasel1/decor/1 2/1 1/1/300/2/{{i18n:SVFS.furniture.DarwinsSlippersEasel}}/47/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PaintingEasel2": "{{ModId}}_PaintingEasel2/decor/1 2/1 1/1/300/2/{{i18n:SVFS.furniture.MidnightLilyEasel}}/48/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_PaintingEasel3": "{{ModId}}_PaintingEasel3/decor/1 2/1 1/1/300/2/{{i18n:SVFS.furniture.SunsetLilyEasel}}/49/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_Bouquet1": "{{ModId}}_Bouquet1/decor/2 2/2 1/1/300/2/{{i18n:SVFS.furniture.WinningDisplay}}/50/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_Bouquet2": "{{ModId}}_Bouquet2/decor/2 2/2 1/1/300/2/{{i18n:SVFS.furniture.RunnerupDisplay}}/52/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_StoneGarden1": "{{ModId}}_StoneGarden1/other/3 3/3 3/1/500/2/{{i18n:SVFS.furniture.ProteaGarden}}/66/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_StoneGarden2": "{{ModId}}_StoneGarden2/other/3 3/3 3/1/500/2/{{i18n:SVFS.furniture.DarwinsSlippersGarden}}/69/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_StoneGarden3": "{{ModId}}_StoneGarden3/other/3 3/3 3/1/500/2/{{i18n:SVFS.furniture.DesertMarigoldGarden}}/72/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_StoneGarden4": "{{ModId}}_StoneGarden4/other/3 3/3 3/1/500/2/{{i18n:SVFS.furniture.NasturtiumGarden}}/99/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_StoneGarden5": "{{ModId}}_StoneGarden5/other/3 3/3 3/1/500/2/{{i18n:SVFS.furniture.PaintedTongueGarden}}/102/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_StoneGarden6": "{{ModId}}_StoneGarden6/other/3 3/3 3/1/500/2/{{i18n:SVFS.furniture.PersianLilyGarden}}/105/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_StoneGarden7": "{{ModId}}_StoneGarden7/other/3 3/3 3/1/500/2/{{i18n:SVFS.furniture.SangriaGarden}}/132/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_FlowerBed1": "{{ModId}}_FlowerBed1/other/3 2/3 1/1/400/2/{{i18n:SVFS.furniture.PaintedTongueBed}}/135/Mods\\{{ModId}}\\furniture/true/collection_SVFS",
+                "{{ModId}}_FlowerBed2": "{{ModId}}_FlowerBed2/other/3 2/3 1/1/400/2/{{i18n:SVFS.furniture.SangriaBed}}/138/Mods\\{{ModId}}\\furniture/true/collection_SVFS"
+            }
+        }
+    ]
+}

@@ -1,0 +1,722 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Flower Show Festival Shops",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                // SEEDS & SAPLINGS SHOP
+                "SVFS_SeedsSaplings": {
+                    "Id": "SVFS_SeedsSaplings",
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "ClosedMessage": "{{i18n:SVFS.shops.ClosedMessage}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_SeedsSaplingsDay1",
+                                    "Condition": "SEASON_DAY summer 6",
+                                    "Dialogue": "{{i18n:SVFS.shops.SeedsSaplings1}}"
+                                },
+                                {
+                                    "Id": "{{ModId}}_SeedsSaplingsDay2",
+                                    "Condition": "SEASON_DAY summer 7",
+                                    "Dialogue": "{{i18n:SVFS.shops.SeedsSaplings2}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_BlushingBrideProteaSeeds",
+                            "ItemId": "(O){{ModId}}_BlushingBrideProteaSeeds",
+                            "Price": 160,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_DarwinsSlipperSeeds",
+                            "ItemId": "(O){{ModId}}_DarwinsSlipperSeeds",
+                            "Price": 80,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_DesertMarigoldSeeds",
+                            "ItemId": "(O){{ModId}}_DesertMarigoldSeeds",
+                            "Price": 60,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_NasturtiumSeeds",
+                            "ItemId": "(O){{ModId}}_NasturtiumSeeds",
+                            "Price": 180,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_PaintedTongueSeeds",
+                            "ItemId": "(O){{ModId}}_PaintedTongueSeeds",
+                            "Price": 140,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_PassionFlowerSeeds",
+                            "ItemId": "(O){{ModId}}_PassionFlowerSeeds",
+                            "Price": 180,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_CeladonPersianLilySeeds",
+                            "ItemId": "(O){{ModId}}_CeladonPersianLilySeeds",
+                            "Price": 80,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_MidnightPersianLilySeeds",
+                            "ItemId": "(O){{ModId}}_MidnightPersianLilySeeds",
+                            "Price": 80,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_SunrisePersianLilySeeds",
+                            "ItemId": "(O){{ModId}}_SunrisePersianLilySeeds",
+                            "Price": 80,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_SunsetPersianLilySeeds",
+                            "ItemId": "(O){{ModId}}_SunsetPersianLilySeeds",
+                            "Price": 80,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_StarburstPersianLilySeeds",
+                            "ItemId": "(O){{ModId}}_StarburstPersianLilySeeds",
+                            "Price": 80,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_ByzantiumPersianLilySeeds",
+                            "ItemId": "(O){{ModId}}_ByzantiumPersianLilySeeds",
+                            "Price": 80,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_SangriaStJohnsWortSeeds",
+                            "ItemId": "(O){{ModId}}_SangriaStJohnsWortSeeds",
+                            "Price": 120,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_BluePuyaCutting",
+                            "ItemId": "(O){{ModId}}_BluePuyaCutting",
+                            "Price": 1500,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Global"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_PlumeriaSapling",
+                            "ItemId": "(O){{ModId}}_PlumeriaSapling",
+                            "Price": 6000,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_HarlequinGlorybowerSapling",
+                            "ItemId": "(O){{ModId}}_HarlequinGlorybowerSapling",
+                            "Price": 10000,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_RandomFlowerSeeds1",
+                            "RandomItemId": [ "{{RandomFlowerSeedsToken1}}" ],
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player",
+                            "AvoidRepeat": true
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_RandomFlowerSeeds2",
+                            "RandomItemId": [ "{{RandomFlowerSeedsToken2}}" ],
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player",
+                            "AvoidRepeat": true
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_RandomFlowerSeeds3",
+                            "RandomItemId": [ "{{RandomFlowerSeedsToken3}}" ],
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player",
+                            "AvoidRepeat": true
+                        },
+                        {
+                            "Id": "{{ModId}}_SeedsSaplingsShop_RandomFlowerSeeds4",
+                            "RandomItemId": [ "{{RandomFlowerSeedsToken4}}" ],
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player",
+                            "AvoidRepeat": true
+                        },
+                    ]
+                },
+                // FLOWERS SHOP
+                "SVFS_FlowerShop": {
+                    "Id": "SVFS_FlowerShop",
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "ClosedMessage": "{{i18n:SVFS.shops.ClosedMessage}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_FlowerShopDay1",
+                                    "Condition": "SEASON_DAY summer 6",
+                                    "Dialogue": "{{i18n:SVFS.shops.FlowerShop1}}"
+                                },
+                                {
+                                    "Id": "{{ModId}}_FlowerShopDay2",
+                                    "Condition": "SEASON_DAY summer 7",
+                                    "Dialogue": "{{i18n:SVFS.shops.FlowerShop2}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "{{ModId}}_FlowerShop_BlushingBrideProtea",
+                            "ItemId": "(O){{ModId}}_BlushingBrideProtea",
+                            "Price": 150,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_DarwinsSlippers",
+                            "ItemId": "(O){{ModId}}_DarwinsSlippers",
+                            "Price": 70,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_DesertMarigold",
+                            "ItemId": "(O){{ModId}}_DesertMarigold",
+                            "Price": 50,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_Nasturtium",
+                            "ItemId": "(O){{ModId}}_Nasturtium",
+                            "Price": 80,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_PaintedTongue",
+                            "ItemId": "(O){{ModId}}_PaintedTongue",
+                            "Price": 130,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_PassionFlower",
+                            "ItemId": "(O){{ModId}}_PassionFlower",
+                            "Price": 80,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_CeladonPersianLily",
+                            "ItemId": "(O){{ModId}}_CeladonPersianLily",
+                            "Price": 70,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_MidnightPersianLily",
+                            "ItemId": "(O){{ModId}}_MidnightPersianLily",
+                            "Price": 70,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_ByzantiumPersianLily",
+                            "ItemId": "(O){{ModId}}_ByzantiumPersianLily",
+                            "Price": 70,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_SunrisePersianLily",
+                            "ItemId": "(O){{ModId}}_SunrisePersianLily",
+                            "Price": 70,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_SunsetPersianLily",
+                            "ItemId": "(O){{ModId}}_SunsetPersianLily",
+                            "Price": 70,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_StarburstPersianLily",
+                            "ItemId": "(O){{ModId}}_StarburstPersianLily",
+                            "Price": 70,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_SangriaStJohnsWort",
+                            "ItemId": "(O){{ModId}}_SangriaStJohnsWort",
+                            "Price": 70,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_RandomFlowers1",
+                            "RandomItemId": [ "{{RandomFlowersToken1}}" ],
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player",
+                            "AvoidRepeat": true
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_RandomFlowers2",
+                            "RandomItemId": [ "{{RandomFlowersToken2}}" ],
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player",
+                            "AvoidRepeat": true
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_RandomFlowers3",
+                            "RandomItemId": [ "{{RandomFlowersToken3}}" ],
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player",
+                            "AvoidRepeat": true
+                        },
+                        {
+                            "Id": "{{ModId}}_FlowerShop_RandomFlowers4",
+                            "RandomItemId": [ "{{RandomFlowersToken4}}" ],
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                },
+                // FURNITURE SHOP
+                "SVFS_FurnitureShop": {
+                    "Id": "SVFS_FurnitureShop",
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "ClosedMessage": "{{i18n:SVFS.shops.ClosedMessage}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_FurnitureShopDay1",
+                                    "Condition": "SEASON_DAY summer 6",
+                                    "Dialogue": "{{i18n:SVFS.shops.FurnitureShop1}}"
+                                },
+                                {
+                                    "Id": "{{ModId}}_FlowerShopDay2",
+                                    "Condition": "SEASON_DAY summer 7",
+                                    "Dialogue": "{{i18n:SVFS.shops.FurnitureShop2}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedTree1",
+                            "ItemId": "(F){{ModId}}_PottedTree1",
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedTree2",
+                            "ItemId": "(F){{ModId}}_PottedTree2",
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedTree3",
+                            "ItemId": "(F){{ModId}}_PottedTree3",
+                            "Price": 550,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedPlant1",
+                            "ItemId": "(F){{ModId}}_PottedPlant1",
+                            "Price": 250,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedPlant2",
+                            "ItemId": "(F){{ModId}}_PottedPlant2",
+                            "Price": 300,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedPlant3",
+                            "ItemId": "(F){{ModId}}_PottedPlant3",
+                            "Price": 250,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedPlant4",
+                            "ItemId": "(F){{ModId}}_PottedPlant4",
+                            "Price": 250,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedPlant5",
+                            "ItemId": "(F){{ModId}}_PottedPlant5",
+                            "Price": 250,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedPlant6",
+                            "ItemId": "(F){{ModId}}_PottedPlant6",
+                            "Price": 300,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedPlant7",
+                            "ItemId": "(F){{ModId}}_PottedPlant7",
+                            "Price": 400,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PottedPlant8",
+                            "ItemId": "(F){{ModId}}_PottedPlant8",
+                            "Price": 400,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_FlowerPainting1",
+                            "ItemId": "(F){{ModId}}_FlowerPainting1",
+                            "Price": 250,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_FlowerPainting2",
+                            "ItemId": "(F){{ModId}}_FlowerPainting2",
+                            "Price": 250,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_FlowerPainting3",
+                            "ItemId": "(F){{ModId}}_FlowerPainting3",
+                            "Price": 250,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_FlowerPainting4",
+                            "ItemId": "(F){{ModId}}_FlowerPainting4",
+                            "Price": 150,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_FlowerPainting5",
+                            "ItemId": "(F){{ModId}}_FlowerPainting5",
+                            "Price": 150,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PaintingEasel1",
+                            "ItemId": "(F){{ModId}}_PaintingEasel1",
+                            "Price": 300,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PaintingEasel2",
+                            "ItemId": "(F){{ModId}}_PaintingEasel2",
+                            "Price": 300,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_PaintingEasel3",
+                            "ItemId": "(F){{ModId}}_PaintingEasel3",
+                            "Price": 300,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_Bouquet1",
+                            "ItemId": "(F){{ModId}}_Bouquet1",
+                            "Price": 300,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player",
+                            "When": {
+                                "HasSeenEvent" : "{{ModId}}_FlowerShowFinalEvent"
+                            }
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_Bouquet2",
+                            "ItemId": "(F){{ModId}}_Bouquet2",
+                            "Price": 300,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player",
+                            "When": {
+                                "HasSeenEvent" : "{{ModId}}_FlowerShowFinalEvent"
+                            }
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_StoneGarden1",
+                            "ItemId": "(F){{ModId}}_StoneGarden1",
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_StoneGarden2",
+                            "ItemId": "(F){{ModId}}_StoneGarden2",
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_StoneGarden3",
+                            "ItemId": "(F){{ModId}}_StoneGarden3",
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_StoneGarden4",
+                            "ItemId": "(F){{ModId}}_StoneGarden4",
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_StoneGarden5",
+                            "ItemId": "(F){{ModId}}_StoneGarden5",
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_StoneGarden6",
+                            "ItemId": "(F){{ModId}}_StoneGarden6",
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_StoneGarden7",
+                            "ItemId": "(F){{ModId}}_StoneGarden7",
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_FlowerBed1",
+                            "ItemId": "(F){{ModId}}_FlowerBed1",
+                            "Price": 400,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_FurnitureShop_FlowerBed2",
+                            "ItemId": "(F){{ModId}}_FlowerBed2",
+                            "Price": 400,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+
+                    ]
+                },
+                // CLOTHING SHOP
+                "SVFS_ClothingShop": {
+                    "Id": "SVFS_ClothingShop",
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "ClosedMessage": "{{i18n:SVFS.shops.ClosedMessage}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_ClothingShopDay1",
+                                    "Condition": "SEASON_DAY summer 6",
+                                    "Dialogue": "{{i18n:SVFS.shops.ClothingShop1}}"
+                                },
+                                {
+                                    "Id": "{{ModId}}_ClothingShopDay2",
+                                    "Condition": "SEASON_DAY summer 7",
+                                    "Dialogue": "{{i18n:SVFS.shops.clothingShop2}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt1",
+                            "ItemId": "(S)1002", //Mint Blouse
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt2",
+                            "ItemId": "(S)1006", // Tan Striped Shirt
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt3",
+                            "ItemId": "(S)1026", // Light Blue Striped Shirt
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt4",
+                            "ItemId": "(S)1028", //Heart Shirt
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt5",
+                            "ItemId": "(S)1032", // Shirt (red w belt)
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt6",
+                            "ItemId": "(S)1067", // Shirt (beige overalls)
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt7",
+                            "ItemId": "(S)1070", // Shirt (fuchsia with teal waistband)
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt8",
+                            "ItemId": "(S)1081", // Shirt (green with pale green band)
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt9",
+                            "ItemId": "(S)1100", // Shirt (pale blue)
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt10",
+                            "ItemId": "(S)1104", // Shirt (green striped)
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt11",
+                            "ItemId": "(S)1140", // Button-down Shirt
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt12",
+                            "ItemId": "(S)1209", // Sports shirt
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt13",
+                            "ItemId": "(S)1222", // Gold Trimmed Shirt
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt14",
+                            "ItemId": "(S)1258", // Spring shirt
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Shirt15",
+                            "ItemId": "(S)1277", // Silky Shirt
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Pants1",
+                            "ItemId": "(P)0", // Farmer Pants
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Pants2",
+                            "ItemId": "(P)3", // Skirt
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Pants3",
+                            "ItemId": "(P)10", // Baggy Pants
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Pants4",
+                            "ItemId": "(P)11", // Simple Dress
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_ClothingShop_Pants5",
+                            "ItemId": "(P)12", // Relaxed Fit Pants
+                            "Price": 500,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

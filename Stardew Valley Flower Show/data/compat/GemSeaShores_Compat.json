@@ -1,0 +1,120 @@
+{
+    "Changes": [
+
+//-------------<Stardew Valley Flower Show>-------------//	
+		{
+			"LogName": "Edit Flower Show map - Gem Sea Shores compat",   
+	 		"Action": "EditMap",
+			"Target": "Maps/Logophile.SVFS_FlowerShowForest", 
+			"FromFile": "assets/Compat.FlowerShow.tmx",
+			"PatchMode": "Replace", 
+		   	"When": {
+				"HasMod |contains=Aimon111.BeachAreas": true,
+				}
+	    },
+		{
+			"LogName": "Edit Flower Show map SVE - Gem Sea Shores compat",
+	 		"Action": "EditMap",
+			"Target": "Maps/Logophile.SVFS_FlowerShowForest", 
+			"FromFile": "assets/Compat.FlowerShow_SVEEdit.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 22, "Width": 12},
+			"ToArea": { "X": 51,  "Y": 0, "Height":22, "Width": 12},
+			"PatchMode": "Replace",
+			"Priority": "Late",
+			    "When": {
+					"HasMod |contains=Aimon111.BeachAreas": true,
+					"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,   
+				}		
+	    },
+		{		
+			"LogName": "Edit Flower Show map SVE - Gem Sea Shores compat - Adds Warps",
+            "Action": "EditMap",
+            "Target": "Maps/Logophile.SVFS_FlowerShowForest",
+            "When": {   
+			"HasMod |contains=Aimon111.BeachAreas": true,
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				},
+            "AddWarps": [
+                    "56 2 Forest 2 78",	
+               ],	
+        },
+// MAP PATCHES - VANILLA Forest
+		{
+			"LogName": "Edit Forest map entrance to Flower Show - Gem Sea Shores compat",
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"PatchMode": "Replace",
+			"Priority": "Late",
+			"FromFile": "assets/Compat.FlowerShow_ForestPatch_Vanilla.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 6, "Width": 8},
+			"ToArea": { "X": 0,  "Y": 73, "Height": 6, "Width": 8},
+			"When": {
+				"HasMod |contains=Aimon111.BeachAreas": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,    
+				"Season": "summer",
+				"Day": "6, 7"
+			} 	
+		},
+//warp changed from y 75 to y 76
+		{ 
+			"LogName": "Edit warps from Forest to Flower Show - Gem Sea Shores compat",
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"PatchMode": "Replace",
+			"Priority": "Late",
+			"AddWarps": [
+				"-1 76 Logophile.SVFS_FlowerShowForest 59 19"
+			],
+			"When": {
+				"HasMod |contains=Aimon111.BeachAreas": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,   
+				"Season": "summer",
+				"Day": "6, 7"   
+				}
+		},
+//warp changed from y 75 to y 76
+		{ 
+			"LogName": "Edit warps from Flower Show to Forest - Gem Sea Shores compat",
+			"Action": "EditMap",
+			"Target": "Maps/Logophile.SVFS_FlowerShowForest",
+			"Priority": "Late+1",
+			"AddWarps": [
+				"62 19 Forest 2 76"
+			],
+			"When": {
+				"HasMod |contains=Aimon111.BeachAreas": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false, 
+			}
+		},
+//warp from SVE version of the map
+		{
+			"LogName": "Add warp from Flower Show to Forest - SVE, Gem Sea Shores compat",
+			"Action": "EditMap",
+			"Target": "Maps/Logophile.SVFS_FlowerShowForest",
+			"Priority": "Late",
+			"AddWarps": [
+				"55 2 Forest 2 78"
+			],
+			"When": {
+				"HasMod |contains=Aimon111.BeachAreas": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{
+			"LogName": "Add warps from Forest to Flower Show - Gem Sea Shores compat",
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"Priority": "Late",
+			"AddWarps": [
+				"1 77 Logophile.SVFS_FlowerShowForest 54 8",
+				"1 78 Logophile.SVFS_FlowerShowForest 54 8"
+			],
+			"When": {
+				"HasMod |contains=Aimon111.BeachAreas": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Season": "summer",
+				"Day": "6, 7"
+			}
+		}
+  	]
+}

@@ -1,0 +1,534 @@
+{
+	"Changes": [
+	//SEEDS, STARTERS, & SAPLINGS
+		{
+			"LogName": "Add seeds & sapling objects",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+			//Blushing Bride Protea Seeds
+				"{{ModId}}_BlushingBrideProteaSeeds": {
+                    "Name": "{{ModId}}_BlushingBrideProteaSeeds",
+                    "DisplayName": "{{i18n:SVFS.BlushingBrideProteaSeeds.Name}}",
+                    "Description": "{{i18n:SVFS.BlushingBrideProteaSeeds.Description}}",
+                    "Edibility": "-300",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 80,
+                    "Texture": "Mods/{{ModId}}/objects",
+                    "SpriteIndex": 0
+				},
+
+			//Darwin's Slipper Seeds
+				"{{ModId}}_DarwinsSlipperSeeds": {
+					"Name": "{{ModId}}_DarwinsSlipperSeeds",
+					"DisplayName": "{{i18n:SVFS.DarwinsSlipperSeeds.Name}}",
+					"Description": "{{i18n:SVFS.DarwinsSlipperSeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 40,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 1
+				},
+
+			//Desert Marigold Seeds
+				"{{ModId}}_DesertMarigoldSeeds": {
+					"Name": "{{ModId}}_DesertMarigoldSeeds",
+					"DisplayName": "{{i18n:SVFS.DesertMarigoldSeeds.Name}}",
+					"Description": "{{i18n:SVFS.DesertMarigoldSeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 30,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 2
+				},
+
+			//Nasturtium Seeds
+				"{{ModId}}_NasturtiumSeeds": {
+					"Name": "{{ModId}}_NasturtiumSeeds",
+					"DisplayName": "{{i18n:SVFS.NasturtiumSeeds.Name}}",
+					"Description": "{{i18n:SVFS.NasturtiumSeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 100,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 3
+				},
+
+			//Painted Tongue Seeds
+				"{{ModId}}_PaintedTongueSeeds": {
+					"Name": "{{ModId}}_PaintedTongueSeeds",
+					"DisplayName": "{{i18n:SVFS.PaintedTongueSeeds.Name}}",
+					"Description": "{{i18n:SVFS.PaintedTongueSeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 70,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 4
+				},
+
+			//Passion Flower Seeds
+				"{{ModId}}_PassionFlowerSeeds": {
+					"Name": "{{ModId}}_PassionFlowerSeeds",
+					"DisplayName": "{{i18n:SVFS.PassionFlowerSeeds.Name}}",
+					"Description": "{{i18n:SVFS.PassionFlowerSeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 100,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 5
+				},
+
+			//Persian Lily Bulbs - 6 Varieties
+				"{{ModId}}_CeladonPersianLilySeeds": {
+					"Name": "{{ModId}}_CeladonPersianLilySeeds",
+					"DisplayName": "{{i18n:SVFS.CeladonPersianLilySeeds.Name}}",
+					"Description": "{{i18n:SVFS.CeladonPersianLilySeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 40,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 6
+				},
+				"{{ModId}}_MidnightPersianLilySeeds": {
+					"Name": "{{ModId}}_MidnightPersianLilySeeds",
+					"DisplayName": "{{i18n:SVFS.MidnightPersianLilySeeds.Name}}",
+					"Description": "{{i18n:SVFS.MidnightPersianLilySeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 40,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 7
+				},
+				"{{ModId}}_SunrisePersianLilySeeds": {
+					"Name": "{{ModId}}_SunrisePersianLilySeeds",
+					"DisplayName": "{{i18n:SVFS.SunrisePersianLilySeeds.Name}}",
+					"Description": "{{i18n:SVFS.SunrisePersianLilySeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 40,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 8
+				},
+				"{{ModId}}_SunsetPersianLilySeeds": {
+					"Name": "{{ModId}}_SunsetPersianLilySeeds",
+					"DisplayName": "{{i18n:SVFS.SunsetPersianLilySeeds.Name}}",
+					"Description": "{{i18n:SVFS.SunsetPersianLilySeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 40,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 9
+				},
+				"{{ModId}}_StarburstPersianLilySeeds": {
+					"Name": "{{ModId}}_StarburstPersianLilySeeds",
+					"DisplayName": "{{i18n:SVFS.StarburstPersianLilySeeds.Name}}",
+					"Description": "{{i18n:SVFS.StarburstPersianLilySeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 40,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 10
+				},
+				"{{ModId}}_ByzantiumPersianLilySeeds": {
+					"Name": "{{ModId}}_ByzantiumPersianLilySeeds",
+					"DisplayName": "{{i18n:SVFS.ByzantiumPersianLilySeeds.Name}}",
+					"Description": "{{i18n:SVFS.ByzantiumPersianLilySeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 40,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 11
+				},
+
+			//Sangria St. John's Seeds
+				"{{ModId}}_SangriaStJohnsWortSeeds": {
+					"Name": "{{ModId}}_SangriaStJohnsWortSeeds",
+					"DisplayName": "{{i18n:SVFS.SangriaStJohnsWortSeeds.Name}}",
+					"Description": "{{i18n:SVFS.SangriaStJohnsWortSeeds.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 60,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 12
+				},
+
+			//Blue Puya Cutting
+				"{{ModId}}_BluePuyaCutting": {
+					"Name": "{{ModId}}_BluePuyaCutting",
+					"DisplayName": "{{i18n:SVFS.BluePuyaCutting.Name}}",
+					"Description": "{{i18n:SVFS.BluePuyaCutting.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 750,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 13
+				},
+
+			//Plumeria Sapling
+				"{{ModId}}_PlumeriaSapling": {
+					"Name": "{{ModId}}_PlumeriaSapling",
+					"DisplayName": "{{i18n:SVFS.PlumeriaSapling.Name}}",
+					"Description": "{{i18n:SVFS.PlumeriaSapling.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 3000,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 14
+				},
+
+			//Harlequin Glorybower Sapling
+				"{{ModId}}_HarlequinGlorybowerSapling": {
+					"Name": "{{ModId}}_HarlequinGlorybowerSapling",
+					"DisplayName": "{{i18n:SVFS.HarlequinGlorybowerSapling.Name}}",
+					"Description": "{{i18n:SVFS.HarlequinGlorybowerSapling.Description}}",
+					"Edibility": "-300",
+					"Type": "Seed",
+					"Category": -74,
+					"Price": 5000,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 15
+				},
+			}
+		},
+	//FLOWER & FRUIT OBJECTS
+		{
+			"LogName": "Add flower objects",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+			//Blushing Bride Protea
+				"{{ModId}}_BlushingBrideProtea": {
+					"Name": "{{ModId}}_BlushingBrideProtea",
+					"DisplayName": "{{i18n:SVFS.BlushingBrideProtea.Name}}",
+					"Description": "{{i18n:SVFS.BlushingBrideProtea.Description}}",
+					"Edibility": -5,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 160,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 16,
+					"ContextTags": [
+						"flower_item",
+						"season_fall",
+						"color_pink"
+					]
+				},
+
+			//Darwin's Slippers
+				"{{ModId}}_DarwinsSlippers": {
+					"Name": "{{ModId}}_DarwinsSlippers",
+					"DisplayName": "{{i18n:SVFS.DarwinsSlippers.Name}}",
+					"Description": "{{i18n:SVFS.DarwinsSlippers.Description}}",
+					"Edibility": -5,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 17,
+					"ContextTags": [
+						"flower_item",
+						"season_winter",
+						"color_gold"
+					]
+				},
+
+			//Desert Marigold
+				"{{ModId}}_DesertMarigold": {
+					"Name": "{{ModId}}_DesertMarigold",
+					"DisplayName": "{{i18n:SVFS.DesertMarigold.Name}}",
+					"Description": "{{i18n:SVFS.DesertMarigold.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 60,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 18,
+					"ContextTags": [
+						"flower_item",
+						"season_summer",
+						"color_yellow"
+					]
+				},
+
+			//Nasturtium
+				"{{ModId}}_Nasturtium": {
+					"Name": "{{ModId}}_Nasturtium",
+					"DisplayName": "{{i18n:SVFS.Nasturtium.Name}}",
+					"Description": "{{i18n:SVFS.Nasturtium.Description}}",
+					"Edibility": 7,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 90,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 19,
+					"ContextTags": [
+						"flower_item",
+						"edible_flower",
+						"season_spring",
+						"season_summer",
+						"color_red"
+					]
+				},
+
+			//Painted Tongue
+				"{{ModId}}_PaintedTongue": {
+					"Name": "{{ModId}}_PaintedTongue",
+					"DisplayName": "{{i18n:SVFS.PaintedTongue.Name}}",
+					"Description": "{{i18n:SVFS.PaintedTongue.Description}}",
+					"Edibility": -3,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 140,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 20,
+					"ContextTags": [
+						"flower_item",
+						"season_spring",
+						"color_dark_purple"
+					]
+				},
+
+			//Passion Flower
+				"{{ModId}}_PassionFlower": {
+					"Name": "{{ModId}}_PassionFlower",
+					"DisplayName": "{{i18n:SVFS.PassionFlower.Name}}",
+					"Description": "{{i18n:SVFS.PassionFlower.Description}}",
+					"Edibility": 5,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 90,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 21,
+					"ContextTags": [
+						"flower_item",
+						"edible_flower",
+						"season_summer",
+						"color_white"
+					]
+				},
+
+			//Persian Lily - 6 varieties
+				"{{ModId}}_CeladonPersianLily": {
+					"Name": "{{ModId}}_CeladonPersianLily",
+					"DisplayName": "{{i18n:SVFS.CeladonPersianLily.Name}}",
+					"Description": "{{i18n:SVFS.CeladonPersianLily.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 22,
+					"ContextTags": [
+						"flower_item",
+						"season_spring",
+						"season_summer",
+						"color_jade"
+					]
+				},
+				"{{ModId}}_MidnightPersianLily": {
+					"Name": "{{ModId}}_MidnightPersianLily",
+					"DisplayName": "{{i18n:SVFS.MidnightPersianLily.Name}}",
+					"Description": "{{i18n:SVFS.MidnightPersianLily.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 23,
+					"ContextTags": [
+						"flower_item",
+						"season_spring",
+						"season_summer",
+						"color_dark_blue"
+					]
+				},
+				"{{ModId}}_SunrisePersianLily": {
+					"Name": "{{ModId}}_SunrisePersianLily",
+					"DisplayName": "{{i18n:SVFS.SunrisePersianLily.Name}}",
+					"Description": "{{i18n:SVFS.SunrisePersianLily.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 24,
+					"ContextTags": [
+						"flower_item",
+						"season_spring",
+						"season_summer",
+						"color_dark_yellow"
+					]
+				},
+				"{{ModId}}_SunsetPersianLily": {
+					"Name": "{{ModId}}_SunsetPersianLily",
+					"DisplayName": "{{i18n:SVFS.SunsetPersianLily.Name}}",
+					"Description": "{{i18n:SVFS.SunsetPersianLily.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 25,
+					"ContextTags": [
+						"flower_item",
+						"season_spring",
+						"season_summer",
+						"color_dark_pink"
+					]
+				},
+				"{{ModId}}_StarburstPersianLily": {
+					"Name": "{{ModId}}_StarburstPersianLily",
+					"DisplayName": "{{i18n:SVFS.StarburstPersianLily.Name}}",
+					"Description": "{{i18n:SVFS.StarburstPersianLily.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 26,
+					"ContextTags": [
+						"flower_item",
+						"season_spring",
+						"season_summer",
+						"color_iridium"
+					]
+				},
+				"{{ModId}}_ByzantiumPersianLily": {
+					"Name": "{{ModId}}_ByzantiumPersianLily",
+					"DisplayName": "{{i18n:SVFS.ByzantiumPersianLily.Name}}",
+					"Description": "{{i18n:SVFS.ByzantiumPersianLily.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 27,
+					"ContextTags": [
+						"flower_item",
+						"season_spring",
+						"season_summer",
+						"color_pale_violet_red"
+					]
+				},
+
+			//Sangria St. John's Wort
+				"{{ModId}}_SangriaStJohnsWort": {
+					"Name": "{{ModId}}_SangriaStJohnsWort",
+					"DisplayName": "{{i18n:SVFS.SangriaStJohnsWort.Name}}",
+					"Description": "{{i18n:SVFS.SangriaStJohnsWort.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 28,
+					"ContextTags": [
+						"flower_item",
+						"season_fall",
+						"color_sand"
+					]
+				},
+
+			//Blue Puya Flower
+				"{{ModId}}_BluePuyaFlower": {
+					"Name": "{{ModId}}_BluePuyaFlower",
+					"DisplayName": "{{i18n:SVFS.BluePuyaFlower.Name}}",
+					"Description": "{{i18n:SVFS.BluePuyaFlower.Description}}",
+					"Edibility": 1,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 220,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 29,
+					"ContextTags": [
+						"flower_item",
+						"color_dark_cyan"
+					]
+				},
+
+			//Plumeria - 2 varieties
+				"{{ModId}}_WhitePlumeria": {
+					"Name": "{{ModId}}_WhitePlumeria",
+					"DisplayName": "{{i18n:SVFS.WhitePlumeria.Name}}",
+					"Description": "{{i18n:SVFS.WhitePlumeria.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 140,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 31,
+					"ContextTags": [
+						"flower_item",
+						"season_summer",
+						"color_white"
+					]
+				},
+				"{{ModId}}_PinkPlumeria": {
+					"Name": "{{ModId}}_PinkPlumeria",
+					"DisplayName": "{{i18n:SVFS.PinkPlumeria.Name}}",
+					"Description": "{{i18n:SVFS.PinkPlumeria.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 140,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 30,
+					"ContextTags": [
+						"flower_item",
+						"season_fall",
+						"color_salmon"
+					]
+				},
+
+			//Harlequin Glorybower - 2 varities
+				"{{ModId}}_HarlequinGlorybower": {
+					"Name": "{{ModId}}_HarlequinGlorybower",
+					"DisplayName": "{{i18n:SVFS.HarlequinGlorybower.Name}}",
+					"Description": "{{i18n:SVFS.HarlequinGlorybower.Description}}",
+					"Edibility": -300,
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 350,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 32,
+					"ContextTags": [
+						"flower_item",
+						"season_spring",
+						"color_sand"
+					]
+				},
+				"{{ModId}}_GlorybowerStarberries": {
+					"Name": "{{ModId}}_GlorybowerStarberries",
+					"DisplayName": "{{i18n:SVFS.GlorybowerStarberries.Name}}",
+					"Description": "{{i18n:SVFS.GlorybowerStarberries.Description}}",
+					"Edibility": 12,
+					"Type": "Fruit",
+					"Category": -79,
+					"Price": 400,
+					"Texture": "Mods/{{ModId}}/objects",
+					"SpriteIndex": 33,
+					"ContextTags": [
+						"fruit_item",
+						"season_fall",
+						"color_dark_purple"
+					]
+				}
+			}
+		}
+	]
+}

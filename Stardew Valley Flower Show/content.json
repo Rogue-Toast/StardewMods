@@ -1,0 +1,703 @@
+{
+	"Format": "2.9.1",
+	// CONFIG SCHEMA
+
+	// DYNAMIC TOKENS
+	"DynamicTokens": [
+		// RANDOM FLOWER SEEDS -- TO-DO: ADD IN MODDED FLOWER SEED OPTIONS	
+		{
+			"Name": "RandomFlowerSeedsToken1", // vanilla flower seeds
+			"Value": "{{Random: (O)425, (O)427, (O)429, (O)431, (O)453, (O)455, (O)MixedFlowerSeeds |key=vanillaseeds}}"
+		},
+		{
+			"Name": "RandomFlowerSeedsToken2", // vanilla flower seeds
+			"Value": "{{Random: (O)MixedFlowerSeeds, (O)425, (O)427, (O)429, (O)431, (O)453, (O)455 |key=vanillaseeds}}"
+		},
+		{
+			"Name": "RandomFlowerSeedsToken3", // vanilla flower seeds
+			"Value": "{{Random: (O)455, (O)MixedFlowerSeeds, (O)425, (O)427, (O)429, (O)431, (O)453 |key=vanillaseeds}}"
+		},
+		{
+			"Name": "RandomFlowerSeedsToken4", // vanilla flower seeds
+			"Value": "{{Random: (O)453, (O)455, (O)MixedFlowerSeeds, (O)425, (O)427, (O)429, (O)431 |key=vanillaseeds}}"
+		},
+		// RANDOM FLOWERS -- TO-DO: ADD IN MODDED FLOWER OPTIONS
+		{
+			"Name": "RandomFlowersToken1", // vanilla flowers
+			"Value": "{{Random: (O)376, (O)421, (O)591, (O)593, (O)595, (O)597 |key=vanillaflowers}}"
+		},
+		{
+			"Name": "RandomFlowersToken2", // vanilla flowers
+			"Value": "{{Random: (O)421, (O)591, (O)593, (O)595, (O)597, (O)376 |key=vanillaflowers}}"
+		},
+		{
+			"Name": "RandomFlowersToken3", // vanilla flowers
+			"Value": "{{Random: (O)591, (O)593, (O)595, (O)597, (O)376, (O)421 |key=vanillaflowers}}"
+		},
+		{
+			"Name": "RandomFlowersToken4", // vanilla forage flowers
+			"Value": "{{Random: (O)18, (O)283, (O)402, (O)418}}"
+		},
+	],
+
+
+	"Changes": [
+		// LOAD DATA
+		{
+			"LogName": "Load crop phase sprites",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/crops",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Load crop & seed objects",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/objects, Mods/{{ModId}}/bluepuya",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Load tree sprites",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/plumeria, Mods/{{ModId}}/glorybower_spring, Mods/{{ModId}}/glorybower_summer, Mods/{{ModId}}/glorybower_fall, Mods/{{ModId}}/glorybower_winter",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Load furniture objects",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/furniture",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Load tilesheets",
+			"Action": "Load",
+			"Target": "Maps/FlowerShowTiles, Maps/EvelynInviteTiles, Maps/FSPhotoTiles,",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Load Letter bg",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/Invitebg",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+            "LogName": "Load Dialogue & Event blank",
+            "Action": "Load",
+            "Target": "Data/Events/{{ModId}}_FlowerShowForest",
+            "FromFile": "data/blank.json"
+        },
+		{
+			"LogName": "Load Flower Show Festival map",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"FromFile": "assets/FlowerShowForest.tmx"
+		},
+		{
+			"LogName": "Load temp map - Evelyn Invite",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_EvelynInvitation",
+			"FromFile": "assets/EvelynInvitation.tmx"
+		},
+		{
+			"LogName": "Load temp map - Flower Show Final Event",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_FlowerShowFinalEvent",
+			"FromFile": "assets/FlowerShowFinalEvent.tmx"
+		},
+		{
+			"LogName": "Load temp map - Flower Show Photo",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_FSPhoto",
+			"FromFile": "assets/FSPhoto.tmx"
+		},
+		{
+			"LogName": "Load Temp Actor sprites - Samantha",
+			"Action": "Load",
+			"Target": "Characters/SVFSSamantha",
+			"FromFile": "assets/SamanthaTempActor.png"
+		},
+		{
+			"LogName": "Load Temp Actor sprites - Carl",
+			"Action": "Load",
+			"Target": "Characters/SVFSCarl",
+			"FromFile": "assets/CarlTempActor.png"
+		},
+		{
+			"LogName": "Load Temp Actor Portraits - Samantha",
+			"Action": "Load",
+			"Target": "Portraits/SVFSSamantha",
+			"FromFile": "assets/SamanthaPortrait.png"
+		},
+		{
+			"LogName": "Load Temp Actor Portraits - Carl",
+			"Action": "Load",
+			"Target": "Portraits/SVFSCarl",
+			"FromFile": "assets/CarlPortrait.png"
+		},
+
+		// INCLUDES
+		{
+			"LogName": "Include festival data",
+			"Action": "Include",
+			"FromFile": "data/festival/flowershowdata.json, data/festival/events.json, data/festival/flowershowschedules.json, data/festival/shops.json"
+		},
+		{
+			"LogName": "Include object data",
+			"Action": "Include",
+			"FromFile": "data/objects/crops.json, data/objects/objects.json, data/objects/furniture.json, data/objects/trees.json, data/objects/bushes.json"
+		},
+		{
+			"LogName": "Include compat data",
+			"Action": "Include",
+			"FromFile": "data/compat/GemSeaShores_Compat.json"
+		},
+
+		// FESTIVAL MAP PATCHES
+		{
+			"LogName": "Add festival location",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}_FlowerShowForest": {
+					"DisplayName": "{{i18n:SVFS.Locations.FlowerShowForest}}",
+					"DefaultArrivalTile": { "X": 59, "Y": 18 },
+					"CreateOnLoad": { "MapPath": "Maps/Logophile.SVFS_FlowerShowForest" },
+					"CanHaveGreenRainSpawns": false,
+				}
+			}
+		},
+		{
+			"LogName": "Festival map patches - Furniture day 1",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/FestivalFurnitureDay1.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 3, "Width":7},
+			"ToArea": { "X": 25, "Y": 36, "Height": 3, "Width":7},
+			"When": {
+				"Season": "summer",
+				"Day": "6"
+			}
+		},
+		{
+			"LogName": "Festival map patches - Furniture day 2",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/FestivalFurnitureDay2.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 3, "Width":7},
+			"ToArea": { "X": 25, "Y": 36, "Height": 3, "Width":7},
+			"When": {
+				"Season": "summer",
+				"Day": "7"
+			}
+		},
+		{
+			"LogName": "Festival map patches - Flowerbox day 1",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/FestivalFlowerboxDay1.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 2, "Width":1},
+			"ToArea": { "X": 24, "Y": 31, "Height": 2, "Width":1},
+			"When": {
+				"Season": "summer",
+				"Day": "6"
+			}
+		},
+		{
+			"LogName": "Festival map patches - Flowerbox day 2",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/FestivalFlowerboxDay2.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 2, "Width":1},
+			"ToArea": { "X": 24, "Y": 31, "Height": 2, "Width":1},
+			"When": {
+				"Season": "summer",
+				"Day": "7"
+			}
+		},
+		{
+			"LogName": "Festival map patches - Outfits day 1",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/FestivalOutfitsDay1.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 2, "Width":5},
+			"ToArea": { "X": 3, "Y": 29, "Height": 2, "Width":5},
+			"When": {
+				"Season": "summer",
+				"Day": "6"
+			}
+		},
+		{
+			"LogName": "Festival map patches - Outfits day 2",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/FestivalOutfitsDay2.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 2, "Width":5},
+			"ToArea": { "X": 3, "Y": 29, "Height": 2, "Width":5},
+			"When": {
+				"Season": "summer",
+				"Day": "7"
+			}
+		},
+		{
+			"LogName": "Festival map patches - Main Tables day 1",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/MainTablesDay1.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 8, "Width":3},
+			"ToArea": { "X": 13, "Y": 27, "Height": 8, "Width":3},
+			"When": {
+				"Season": "summer",
+				"Day": "6"
+			}
+		},
+		{
+			"LogName": "Festival map patches - Main Tables day 2",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/MainTablesDay2.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 8, "Width":3},
+			"ToArea": { "X": 13, "Y": 27, "Height": 8, "Width":3},
+			"When": {
+				"Season": "summer",
+				"Day": "7",
+			}
+		},
+
+
+		// MAP PATCHES - VANILLA
+		{
+			"LogName": "Forest map patch for Flower Show - vanilla",
+			"Action": "EditMap",
+			"Priority": "Late",
+			"Target": "Maps/Forest",
+			"PatchMode": "Replace",
+			"FromFile": "assets/ForestPatch.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Height": 6, "Width": 8},
+			"ToArea": { "X": 0,  "Y": 72, "Height": 6, "Width": 8},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod |contains=Aimon111.BeachAreas": false,
+				"Season": "summer",
+				"Day": "6, 7"
+			}
+		},
+		{
+			"LogName": "Add warp to Flower Show map - vanilla",
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"PatchMode": "Replace",
+			"AddWarps": [
+				"-1 75 {{ModId}}_FlowerShowForest 59 18"
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod |contains=Aimon111.BeachAreas": false,
+				"Season": "summer",
+				"Day": "6, 7"
+			}
+		},
+		{
+			"LogName": "Add warp from Flower Show to Forest - vanilla",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"AddWarps": [
+				"60 18 Forest 0 75",
+				"60 19 Forest 0 75"
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod |contains=Aimon111.BeachAreas": false
+			}
+		},
+
+		// MAP PATCHES - SVE COMPAT
+		{
+			"LogName": "Forest map patch for Flower Show - SVE",
+			"Action": "EditMap",
+			"Priority": "Late",
+			"Target": "Maps/Forest",
+			"PatchMode": "Replace",
+			"FromFile": "assets/ForestPatchSVE.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 12 },
+			"ToArea": { "X": 0,  "Y": 72, "Width": 8, "Height": 12 },
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Season": "summer",
+				"Day": "6, 7"
+			}
+		},
+		{
+			"LogName": "Add warp to Flower Show map - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"AddWarps": [
+				"-1 77 {{ModId}}_FlowerShowForest 59 18",
+				"-1 78 {{ModId}}_FlowerShowForest 59 18"
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Season": "summer",
+				"Day": "6, 7"
+			}
+		},
+		{
+			"LogName": "Add warp from Flower Show to Forest - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_FlowerShowForest",
+			"AddWarps": [
+				"60 18 Forest 0 77",
+				"60 19 Forest 0 78"
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+
+		// MAP STRINGS
+		{
+			"LogName": "Add festival map strings",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"SVFS_Tourist1": "{{i18n: Strings.Tourists.Food.{{DayOfWeek}}}}",
+				"SVFS_Tourist2": "{{i18n: Strings.Tourists.Clothing.{{DayOfWeek}}}}",
+				"SVFS_Tourist3": "{{i18n: Strings.Tourists.Lupini.{{DayOfWeek}}}}",
+				"SVFS_Tourist4": "{{i18n: Strings.Tourists.Mom.{{DayOfWeek}}}}",
+				"SVFS_Tourist5": "{{i18n: Strings.Tourists.Kid.{{DayOfWeek}}}}",
+				"SVFS_Flowers1": "{{i18n: Strings.Flowers.WagonDisplay1}}",
+				"SVFS_Flowers2": "{{i18n: Strings.Flowers.SangriaBed}}",
+				"SVFS_Flowers3": "{{i18n: Strings.Flowers.PaintedTongueBed}}",
+				"SVFS_Flowers4": "{{i18n: Strings.Flowers.SlippersGarden}}",
+				"SVFS_Flowers5": "{{i18n: Strings.Flowers.Flowerbox.{{DayOfWeek}}}}",
+				"SVFS_Flowers6": "{{i18n: Strings.Flowers.WagonDisplay2}}",
+				"SVFS_Flowers7": "{{i18n: Strings.Flowers.PaintedTongueGarden}}",
+				"SVFS_Flowers8": "{{i18n: Strings.Flowers.NasturtiumPot}}",
+				"SVFS_Flowers9": "{{i18n: Strings.Flowers.GlorybowerPotFall}}",
+				"SVFS_Flowers10": "{{i18n: Strings.Flowers.DesertMarigoldPot}}",
+				"SVFS_Flowers11": "{{i18n: Strings.Flowers.DarwinsSlippersPot}}",
+				"SVFS_Flowers12": "{{i18n: Strings.Flowers.GlorybowerPotSpring}}",
+				"SVFS_Flowers13": "{{i18n: Strings.Flowers.ProteaBed}}",
+				"SVFS_Flowers14": "{{i18n: Strings.Flowers.Table1a}}",
+				"SVFS_Flowers15": "{{i18n: Strings.Flowers.Table1b}}",
+				"SVFS_Flowers16": "{{i18n: Strings.Flowers.Table2a}}",
+				"SVFS_Flowers17": "{{i18n: Strings.Flowers.Table2b}}",
+				"SVFS_Flowers18": "{{i18n: Strings.Flowers.Table3a}}",
+				"SVFS_Flowers19": "{{i18n: Strings.Flowers.Table3b}}",
+				"SVFS_Flowers20": "{{i18n: Strings.Flowers.Table4a}}",
+				"SVFS_Flowers21": "{{i18n: Strings.Flowers.Table4b}}",
+				"SVFS_MainTable1": "{{i18n: Strings.Flowers.CenterTable1.{{DayOfWeek}}}}",
+				"SVFS_MainTable2": "{{i18n: Strings.Flowers.CenterTable2.{{DayOfWeek}}}}",
+				"SVFS_Misc1": "{{i18n: Strings.Misc.Furniture1.{{DayOfWeek}}}}",
+				"SVFS_Misc2": "{{i18n: Strings.Misc.Furniture2.{{DayOfWeek}}}}",
+				"SVFS_Misc3": "{{i18n: Strings.Misc.Furniture3.{{DayOfWeek}}}}",
+				"SVFS_Misc4": "{{i18n: Strings.Misc.OpenBook}}",
+				"SVFS_Misc5": "{{i18n: Strings.Misc.Boombox}}",
+				"SVFS_Misc6": "{{i18n: Strings.Misc.FlowerDress.{{DayOfWeek}}}}",
+				"SVFS_Misc7": "{{i18n: Strings.Misc.Outfit.{{DayOfWeek}}}}"
+			}
+		},
+
+		//CT TRIGGERS
+		{
+            "LogName": "Pre-festival CTs",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_FlowerShowHype": {
+                	"Id": "{{ModId}}_FlowerShowHype",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON_DAY summer 2",
+                    "Actions": [
+                        "AddConversationTopic SVFS_FlowerShowHype 4"
+                    ],
+                    "MarkActionApplied": false
+                },
+            },
+            "When": {
+            	"HasSeenEvent": "{{ModId}}_EvelynIsInvited"
+            	}
+        },
+        {
+            "LogName": "Post-festival CTs",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_FlowerShowOver": {
+                	"Id": "{{ModId}}_FlowerShowOver",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON_DAY summer 8",
+                    "Actions": [
+                        "AddConversationTopic SVFS_FlowerShowOver 3"
+                    ],
+                    "MarkActionApplied": false
+                },
+            },
+            "When": {
+            	"HasSeenEvent": "{{ModId}}_FlowerShowFinalEvent"
+            	}
+        },
+
+        //MAIL TRIGGERS
+        {
+        	"LogName": "Send letters",
+        	"Action": "EditData",
+        	"Target": "Data/TriggerActions",
+        	"Entries": {
+        		"{{ModId}}_FestivalInvitation": {
+        			"Id": "{{ModId}}_FestivalInvitation",
+        			"Trigger": "DayEnding",
+        			"Condition": "SEASON_DAY spring 28",
+        			"Actions": [
+        				"AddMail Current SVFS.Invitation"
+        			]
+        		},
+        		"{{ModId}}_ReminderLetter": {
+        			"Id": "{{ModId}}_ReminderLetter",
+        			"Trigger": "DayEnding",
+        			"Condition": "SEASON_DAY summer 4",
+        			"Actions": [
+        				"AddMail Current SVFS.ReminderMail"
+        			]
+        		},
+        	}
+        },
+
+        //LETTERS
+        {
+        	"LogName": "Add letters",
+        	"Action": "EditData",
+        	"Target": "Data/Mail",
+        	"Entries": {
+        		"SVFS.Invitation": "{{i18n:SVFS.Invitation.text}} [letterbg Mods\\{{ModId}}\\Invitebg 0] [#] {{i18n:SVFS.Invitation.name}}",
+        		"SVFS.ReminderMail": "{{i18n:SVFS.ReminderMail.text}} [#] {{i18n:SVFS.ReminderMail.name}}"
+        	}
+        },
+
+        // POST-FESTIVAL SHOP CHANGES
+        {
+        	"LogName": "Add to Pierre's stock on Saturdays",
+        	"Action": "EditData",
+        	"Target": "Data/Shops",
+        	"TargetField": [ "SeedShop", "Items"],
+        	"Entries": {
+        		"{{ModId}}_BlushingBrideProteaSeeds": {
+        			"Id": "{{ModId}}_BlushingBrideProteaSeeds",
+        			"ItemId": "(O){{ModId}}_BlushingBrideProteaSeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+                    "Price": 180,
+                    "IgnoreShopPriceModifiers": true,
+                    "AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_DarwinsSlipperSeeds": {
+        			"Id": "{{ModId}}_DarwinsSlipperSeeds",
+                    "ItemId": "(O){{ModId}}_DarwinsSlipperSeeds",
+                    "Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+                    "Price": 100,
+                    "IgnoreShopPriceModifiers": true,
+                    "AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_DesertMarigoldSeeds": {
+        			"Id": "{{ModId}}_DesertMarigoldSeeds",
+                    "ItemId": "(O){{ModId}}_DesertMarigoldSeeds",
+                    "Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+                    "Price": 80,
+                    "IgnoreShopPriceModifiers": true,
+                    "AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_NasturtiumSeeds": {
+        			"Id": "{{ModId}}_NasturtiumSeeds",
+                    "ItemId": "(O){{ModId}}_NasturtiumSeeds",
+                    "Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+                    "Price": 200,
+                    "IgnoreShopPriceModifiers": true,
+                    "AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_PaintedTongueSeeds": {
+        			"Id": "{{ModId}}_PaintedTongueSeeds",
+        			"ItemId": "(O){{ModId}}_PaintedTongueSeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 160,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_PassionFlowerSeeds": {
+        			"Id": "{{ModId}}_PassionFlowerSeeds",
+        			"ItemId": "(O){{ModId}}_PassionFlowerSeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 200,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_CeladonPersianLilySeeds": {
+        			"Id": "{{ModId}}_CeladonPersianLilySeeds",
+        			"ItemId": "(O){{ModId}}_CeladonPersianLilySeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 100,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_MidnightPersianLilySeeds": {
+        			"Id": "{{ModId}}_MidnightPersianLilySeeds",
+        			"ItemId": "(O){{ModId}}_MidnightPersianLilySeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 100,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_SunrisePersianLilySeeds": {
+        			"Id": "{{ModId}}_SunrisePersianLilySeeds",
+        			"ItemId": "(O){{ModId}}_SunrisePersianLilySeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 100,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_SunsetPersianLilySeeds": {
+        			"Id": "{{ModId}}_SunsetPersianLilySeeds",
+        			"ItemId": "(O){{ModId}}_SunsetPersianLilySeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 100,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_StarburstPersianLilySeeds": {
+        			"Id": "{{ModId}}_StarburstPersianLilySeeds",
+        			"ItemId": "(O){{ModId}}_StarburstPersianLilySeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 100,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_ByzantiumPersianLilySeeds": {
+        			"Id": "{{ModId}}_ByzantiumPersianLilySeeds",
+        			"ItemId": "(O){{ModId}}_ByzantiumPersianLilySeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 100,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_SangriaStJohnsWortSeeds": {
+        			"Id": "{{ModId}}_SangriaStJohnsWortSeeds",
+        			"ItemId": "(O){{ModId}}_SangriaStJohnsWortSeeds",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 140,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_BluePuyaCutting": {
+        			"Id": "{{ModId}}_BluePuyaCutting",
+        			"ItemId": "(O){{ModId}}_BluePuyaCutting",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 1600,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": 5,
+                    "AvailableStockLimit": "Global"
+        		},
+        		"{{ModId}}_PlumeriaSapling": {
+        			"Id": "{{ModId}}_PlumeriaSapling",
+        			"ItemId": "(O){{ModId}}_PlumeriaSapling",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 7000,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		},
+        		"{{ModId}}_HarlequinGlorybowerSapling": {
+        			"Id": "{{ModId}}_HarlequinGlorybowerSapling",
+        			"ItemId": "(O){{ModId}}_HarlequinGlorybowerSapling",
+        			"Condition": "DAY_OF_WEEK Sat, PLAYER_HAS_SEEN_EVENT Current Logophile.SVFS_FlowerShowFinalEvent", 
+        			"Price": 12000,
+        			"IgnoreShopPriceModifiers": true,
+        			"AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+        		}             
+        	},
+        	"MoveEntries": [
+        		{
+        			"Id": "{{ModId}}_BlushingBrideProteaSeeds",
+        			"BeforeId": "GrassStarter"
+        		},
+        		{
+                    "Id": "{{ModId}}_DarwinsSlipperSeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_DesertMarigoldSeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_NasturtiumSeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_PaintedTongueSeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_PassionFlowerSeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_CeladonPersianLilySeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_MidnightPersianLilySeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_SunrisePersianLilySeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_SunsetPersianLilySeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_StarburstPersianLilySeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_ByzantiumPersianLilySeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_SangriaStJohnsWortSeeds",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_BluePuyaCutting",
+                    "BeforeId": "GrassStarter"
+                },
+                {
+                    "Id": "{{ModId}}_PlumeriaSapling",
+                    "BeforeId": "Catalogue"
+                },
+                {
+                    "Id": "{{ModId}}_HarlequinGlorybowerSapling",
+                    "BeforeId": "Catalogue"
+                },
+        	]
+        }
+	]
+}

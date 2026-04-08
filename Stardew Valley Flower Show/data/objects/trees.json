@@ -1,0 +1,95 @@
+{
+    "Changes": [
+        //Add Plumeria Tree
+        {
+            "LogName": "Add Plumeria Tree",
+            "Action": "EditData",
+            "Target": "Data/FruitTrees",
+            "Entries": {
+                "{{ModId}}_PlumeriaSapling": {
+                    "DisplayName": "{{i18n: SVFS.PlumeriaSapling.Name}}",
+                    "Seasons": ["Summer", "Fall"],
+                    "Fruit": [
+                        {
+                            "Id": "{{ModId}}_WhitePlumeria",
+                            "ItemId": "{{ModId}}_WhitePlumeria",
+                            "Condition": "SEASON Summer"
+                        },
+                        {
+                            "Id": "{{ModId}}_PinkPlumeria",
+                            "ItemId": "{{ModId}}_PinkPlumeria",
+                            "Condition": "SEASON Fall"
+                        }
+                    ],
+                    "Texture": "Mods/{{ModId}}/plumeria",
+                    "TextureSpriteRow": 0
+                }
+            }
+        },
+
+        // Add Harlequin Glorybower Tree
+        {
+            "LogName": "Add Harlequin Glorybower Tree",
+            "Action": "EditData",
+            "Target": "Data/WildTrees",
+            "Entries": {
+                "{{ModId}}_HarlequinGlorybowerTree": {
+                    "Textures": [
+                        {
+                            "Texture": "Mods/{{ModId}}/glorybower_spring",
+                            "Season": "Spring",
+                        },
+                        {
+                            "Texture": "Mods/{{ModId}}/glorybower_summer",
+                            "Season": "Summer"
+                        },
+                        {
+                            "Texture": "Mods/{{ModId}}/glorybower_fall",
+                            "Season": "Fall",
+                        },
+                        {
+                            "Texture": "Mods/{{ModId}}/glorybower_winter",
+                            "Season": "Winter"
+                        }
+                    ],
+                    "SeedItemId": "{{ModId}}_HarlequinGlorybowerSapling",
+                    "SeedSpreadChance": 0,
+                    "SeedOnShakeChance": 0,
+                    "SeedOnChopChance": 1,
+                    "DropWoodOnChop": true,
+                    "DropHardwoodOnLumberChop": true,
+                    "IsLeafy": true,
+                    "IsLeafyInWinter": false,
+                    "GrowsInWinter": false,
+                    "IsStumpDuringWinter": false,
+                    "UseAlternateSpriteWhenNotShaken": true,
+                    "ShakeItems": [
+                        {
+                            "ItemId": "{{ModId}}_HarlequinGlorybower",
+                            "Season": "Spring",
+                            "Chance": 1
+                        },
+                        {
+                            "ItemId": "{{ModId}}_GlorybowerStarberries",
+                            "Season": "Fall",
+                            "Chance": 1
+                        },
+                        {
+                            "ItemId": "(O)92",
+                            "Season": "Summer",
+                            "Chance": 0.5
+                        },
+                        {
+                            "ItemId": "(O)92",
+                            "Season": "Winter",
+                            "Chance": 0.75
+                        }
+                    ],
+                    "CustomFields": {
+                        "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:SVFS.HarlequinGloryBowerTree.Name}}"
+                    }
+                }
+            }
+        }
+    ]
+}
