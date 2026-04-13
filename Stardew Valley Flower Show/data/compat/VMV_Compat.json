@@ -1,0 +1,362 @@
+{
+    "Changes": [
+
+    //Add selection of Moira's clothing to clothing vendor
+		{
+			"LogName": "Edit Clothing vendor stock - VMV",   
+	 		"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "SVFS_ClothingShop", "Items" ], 
+		   	"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"Lumisteria.MtVapius.RandomPrideShirt": {
+					"Id": "Lumisteria.MtVapius.RandomPrideShirt",
+					"ItemId": "RANDOM_ITEMS (S)",
+					"Price": 500,
+					"MaxItems": 2,
+                    "AvailableStockLimit": "Player",
+                    "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_ShirtPride",
+				},
+				"Lumisteria.MtVapius.RandomShirt": {
+					"Id": "Lumisteria.MtVapius.RandomShirt",
+					"ItemId": "RANDOM_ITEMS (S)",
+					"Price": 500,
+					"MaxItems": 2,
+					"AvailableStockLimit": "Player",
+					"PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_Shirt0",
+				},
+				"Lumisteria.MtVapius.RandomPants": {
+					"Id": "Lumisteria.MtVapius.RandomPants",
+					"ItemId": "RANDOM_ITEMS (P)",
+					"Price": 1000,
+					"MaxItems": 2,
+					"AvailableStockLimit": "Player",
+					"PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_Pants0",
+				},
+				"Lumisteria.MtVapius.RandomHat": {
+					"Id": "Lumisteria.MtVapius.RandomHat",
+					"ItemId": "RANDOM_ITEMS (H)",
+					"Price": 1000,
+					"MaxItems": 1,
+					"AvailableStockLimit": "Player",
+					"PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_",
+				}
+			},
+		},
+	//Add selection of flower decor items to furniture shop
+		{
+			"LogName": "Edit furniture vendor stock - VMV",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "SVFS_FurnitureShop", "Items" ],
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"Lumisteria.MtVapius_FlowerDecor1": {
+					"Id": "Lumisteria.MtVapius_FlowerDecor1",
+					"RandomItemId": [ "{{RandomVMVFlowerDecorToken1}}" ],
+					"Price": 650,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"AvoidRepeat": true,
+					"MaxItems": 1
+				},
+				"Lumisteria.MtVapius_FlowerDecor2": {
+					"Id": "Lumisteria.MtVapius_FlowerDecor2",
+					"RandomItemId": [ "{{RandomVMVFlowerDecorToken2}}" ],
+					"Price": 650,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"AvoidRepeat": true,
+					"MaxItems": 1
+				},
+				"Lumisteria.MtVapius_FlowerDecor3": {
+					"Id": "Lumisteria.MtVapius_FlowerDecor3",
+					"RandomItemId": [ "{{RandomVMVFlowerDecorToken3}}" ],
+					"Price": 650,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"AvoidRepeat": true,
+					"MaxItems": 1
+				}
+			}
+		},
+
+	//Add selection of flower seeds to Seeds & Saplings shop
+		{
+			"LogName": "Edit Seeds & Saplings vendor stock - VMV year 1",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "SVFS_SeedsSaplings", "Items" ],
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"Lumisteria.MtVapius_TagetesSeeds": {
+					"Id": "Lumisteria.MtVapius_TagetesSeeds",
+                    "ItemId": "(O)Lumisteria.MtVapius_TagetesSeeds",
+                    "Price": 40,
+                    "AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+				},
+				"Lumisteria.MtVapius_BlueMorningGloryStarter": {
+					"Id": "Lumisteria.MtVapius_BlueMorningGloryStarter",
+					"ItemId": "(O)Lumisteria.MtVapius_BlueMorningGloryStarter",
+					"Price": 40,
+					"AvailableStock": -1,
+					"AvailableStockLimit": "Player"
+				},
+				"Lumisteria.MtVapius_PinkMorningGloryStarter": {
+					"Id": "Lumisteria.MtVapius_PinkMorningGloryStarter",
+					"ItemId": "(O)Lumisteria.MtVapius_PinkMorningGloryStarter",
+					"Price": 40,
+					"AvailableStock": -1,
+					"AvailableStockLimit": "Player"
+				},
+				"Lumisteria.MtVapius_WildVapiusSeeds": {
+					"Id": "Lumisteria.MtVapius_WildVapiusSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_WildVapiusSeeds",
+					"Price": 100,
+					"AvailableStock": 10,
+					"AvailableStockLimit": "Player"
+				},
+				"Lumisteria.MtVapius_MountainMeadowSeeds": {
+					"Id": "Lumisteria.MtVapius_MountainMeadowSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_MountainMeadowSeeds",
+					"Price": 200,
+					"AvailableStock": 10,
+					"AvailableStockLimit": "Player"
+				}
+			}
+		},
+		{
+			"LogName": "Edit Seeds & Saplings vendor stock - VMV year 2",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "SVFS_SeedsSaplings", "Items"],
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"Lumisteria.MtVapius_NympheaSeeds": {
+					"Id": "Lumisteria.MtVapius_NympheaSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_NympheaSeeds",
+					"Price": 150,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 3, YEAR 2"
+				},
+				"Lumisteria.MtVapius_WoodSilkFlowerSeeds": {
+					"Id": "Lumisteria.MtVapius_WoodSilkFlowerSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_WoodSilkFlowerSeeds",
+					"Price": 100,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 4, YEAR 2"
+				},
+				"Lumisteria.MtVapius_NightMiscanthusSeeds": {
+					"Id": "Lumisteria.MtVapius_NightMiscanthusSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_NightMiscanthusSeeds",
+					"Price": 160,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 3, YEAR 2"
+				},
+				"Lumisteria.MtVapius_PrimroseSeeds": {
+					"Id": "Lumisteria.MtVapius_PrimroseSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_PrimroseSeeds",
+					"Price": 150,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 4, YEAR 2"
+				},
+				"Lumisteria.MtVapius_HelleboreSeeds": {
+					"Id": "Lumisteria.MtVapius_HelleboreSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_HelleboreSeeds",
+					"Price": 200,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 3, YEAR 2"
+				},
+				"Lumisteria.MtVapius_FugacineTubers": {
+					"Id": "Lumisteria.MtVapius_FugacineTubers",
+					"ItemId": "(O)Lumisteria.MtVapius_FugacineTubers",
+					"Price": 225,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 4, YEAR 2"
+				},
+				"Lumisteria.MtVapius_ElfcupSeeds": {
+					"Id": "Lumisteria.MtVapius_ElfcupSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_ElfcupSeeds",
+					"Price": 600,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 3, YEAR 2"
+				},
+				"Lumisteria.MtVapius_NeralbaneSeeds": {
+					"Id": "Lumisteria.MtVapius_NeralbaneSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_NeralbaneSeeds",
+					"Price": 240,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 4, YEAR 2"
+				},
+				"Lumisteria.MtVapius_RedBouquetSeeds": {
+					"Id": "Lumisteria.MtVapius_RedBouquetSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_RedBouquetSeeds",
+					"Price": 300,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 3, YEAR 2"
+				},
+				"Lumisteria.MtVapius_BalmcreekCarillonRhizome": {
+					"Id": "Lumisteria.MtVapius_BalmcreekCarillonRhizome",
+					"ItemId": "(O)Lumisteria.MtVapius_BalmcreekCarillonRhizome",
+					"Price": 600,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 4, YEAR 2"
+				},
+				"Lumisteria.MtVapius_GoblinGentianSeeds": {
+					"Id": "Lumisteria.MtVapius_GoblinGentianSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_GoblinGentianSeeds",
+					"Price": 200,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 3, YEAR 2"
+				},
+				"Lumisteria.MtVapius_VelvetIrisRhizome": {
+					"Id": "Lumisteria.MtVapius_VelvetIrisRhizome",
+					"ItemId": "(O)Lumisteria.MtVapius_VelvetIrisRhizome",
+					"Price": 200,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 4, YEAR 2"
+				},
+				"Lumisteria.MtVapius_CosmosSeeds": {
+					"Id": "Lumisteria.MtVapius_CosmosSeeds",
+					"ItemId": "(O)Lumisteria.MtVapius_CosmosSeeds",
+					"Price": 200,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player",
+					"Condition": "SEASON_DAY summer 3, YEAR 2"
+				}
+			}
+		},
+	// Add small assortment of VMV flowers to flowershop
+		{
+			"LogName": "Edit Flowershop inventory - VMV compat",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "SVFS_FlowerShop", "Items"],
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"Lumisteria.MtVapius.Flowers": {
+					"Id": "Lumisteria.MtVapius.Flowers",
+					"ItemId": "RANDOM_ITEMS (O)",
+					"PerItemCondition": "ITEM_CATEGORY Target -80, ITEM_ID_PREFIX Target Lumisteria.MtVapius, !ITEM_CONTEXT_TAG Target stellar_plant, !ITEM_CONTEXT_TAG Target stellar_item",
+					"MaxItems": 5,
+					"AvailableStock": 5,
+					"AvailableStockLimit": "Player"
+				}
+			}
+		},
+		{
+			"LogName": "Edit schedule to attend festival - Aster",
+			"Action": "EditData",
+			"Target": "Characters/schedules/AsterPellegrinVMV",
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"Logophile.SVFS_FlowerShow_1": "0 Logophile.SVFS_FlowerShowForest 17 28 1/610 Logophile.SVFS_FlowerShowForest 17 29 1 \"Strings\\schedules\\AsterPellegrinVMV:FlowerShow.000\"/1800 Lumisteria.MtVapius_AsterHouse 23 9 0/2030 Lumisteria.MtVapius_AsterHouse 8 17 1/2300 Lumisteria.MtVapius_AsterHouse 16 5 1",
+				"Logophile.SVFS_FlowerShow_2": "0 Logophile.SVFS_FlowerShowForest 34 39 2/610 Logophile.SVFS_FlowerShowForest 34 38 2 \"Strings\\schedules\\AsterPellegrinVMV:FlowerShow.001\"/1800 Lumisteria.MtVapius_AsterHouse 23 9 0/2030 Lumisteria.MtVapius_AsterHouse 8 17 1/2300 Lumisteria.MtVapius_AsterHouse 16 5 1",
+			}
+		},
+		{
+			"LogName": "Add schedule dialogue - Aster",
+			"Action": "EditData",
+			"Target": "Strings/schedules/AsterPellegrinVMV",
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"FlowerShow.000": "{{i18n:SVFS.FS.AsterPellegrinVMV.01}}",
+				"FlowerShow.001": "{{i18n:SVFS.FS.AsterPellegrinVMV.02}}"
+			}
+		},
+		{
+			"LogName": "Edit schedule to attend festival - Maddy",
+			"Action": "EditData",
+			"Target": "Characters/schedules/MaddyPellegrinVMV",
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"Logophile.SVFS_FlowerShow_1": "0 Logophile.SVFS_FlowerShowForest 21 40 2/610 Logophile.SVFS_FlowerShowForest 22 40 2 \"Strings\\schedules\\MaddyPellegrinVMV:FlowerShow.000\"/1800 Lumisteria.MtVapius_AsterHouse 2 17 1/2230 Lumisteria.MtVapius_AsterHouse 8 19 3",
+			}
+		},
+		{
+			"LogName": "Add schedule dialogue - Maddy",
+			"Action": "EditData",
+			"Target": "Strings/schedules/MaddyPellegrinVMV",
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"FlowerShow.000": "{{i18n:SVFS.FS.MaddyPellegrinVMV.01}}"
+			}
+		},
+		{
+			"LogName": "Edit schedule to attend festival - Naveen",
+			"Action": "EditData",
+			"Target": "Characters/schedules/NaveenFaycombeSereneVMV",
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"Logophile.SVFS_FlowerShow_2": "0 Logophile.SVFS_FlowerShowForest 21 40 2/610 Logophile.SVFS_FlowerShowForest 22 40 2\"Strings\\schedules\\NaveenFaycombeSereneVMV:FlowerShow.000\"/1800 Lumisteria.MtVapius_Faycombe 30 28 1/2200 Lumisteria.MtVapius_NaveenHouse 14 5 3",
+			}
+		},
+		{
+			"LogName": "Add schedule dialogue - Naveen",
+			"Action": "EditData",
+			"Target": "Strings/schedules/NaveenFaycombeSereneVMV",
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"FlowerShow.000": "{{i18n:SVFS.FS.NaveenFaycombeSereneVMV.01}}"
+			}
+		},
+		{
+			"LogName": "Edit schedule to attend Festival - Gavin",
+			"Action": "EditData",
+			"Target": "Characters/schedules/GavinPommerelVMV",
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				"Hearts:GavinPommerelVMV": "8"
+				},
+			"Entries": {
+				"Logophile.SVFS_FlowerShow_1": "0 Logophile.SVFS_FlowerShowForest 11 30 3/610 Logophile.SVFS_FlowerShowForest 11 29 3\"Strings\\schedules\\GavinPommerelVMV:FlowerShow.000\"/1800 Lumisteria.MtVapius_Lodge 14 9 2 square_3_3/2200 Lumisteria.MtVapius_LodgeIndoor 10 8 3",
+			}
+		},
+		{
+			"LogName": "Add schedule dialogue - Gavin",
+			"Action": "EditData",
+			"Target": "Strings/schedules/GavinPommerelVMV",
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				},
+			"Entries": {
+				"FlowerShow.000": "{{i18n:SVFS.FS.GavinPommerelVMV.01}}"
+			}
+		}
+  	]
+}

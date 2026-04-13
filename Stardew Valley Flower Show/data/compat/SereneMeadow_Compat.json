@@ -1,0 +1,179 @@
+{
+	"Changes": [
+
+	// Serene Meadow base compat
+		{
+			"LogName": "Edit seeds & sapling shop inventory - Serene Meadow base compat",
+       		"Action": "EditData",
+        	"Target": "Data/Shops",
+        	"TargetField": [ "SVFS_SeedsSaplings", "Items" ], 
+            "When": {
+            	"HasMod |contains=Lumisteria.SereneMeadow": true,
+            	},
+        	"Entries": {
+            	"Lumisteria.SereneMeadow_CornflowerSeeds": {
+                	"Id": "Lumisteria.SereneMeadow_CornflowerSeeds",
+                	"ItemId": "(O)Lumisteria.SereneMeadow_CornflowerSeeds",
+                	"Price": 10,
+                	"AvailableStock": 10,
+                	"AvailableStockLimit": "Player"
+          		},
+          		"Lumisteria.SereneMeadow_SnowdropSeeds": {
+          			"Id": "Lumisteria.SereneMeadow_SnowdropSeeds",
+          			"ItemId": "(O)Lumisteria.SereneMeadow_SnowdropSeeds",
+          			"Price": 50,
+          			"AvailableStock": 10,
+          			"AvailableStockLimit": "Player"
+          		},
+          		"Lumisteria.SereneMeadow_SpringBellsSeeds": {
+          			"Id": "Lumisteria.SereneMeadow_SpringBellsSeeds",
+          			"ItemId": "(O)Lumisteria.SereneMeadow_SpringBellsSeeds",
+          			"Price": 25,
+          			"AvailableStock": 10,
+          			"AvailableStockLimit": "Player"
+          		},
+          		"Lumisteria.SereneMeadow_CalendulaSeeds": {
+          			"Id": "Lumisteria.SereneMeadow_CalendulaSeeds",
+          			"ItemId": "(O)Lumisteria.SereneMeadow_CalendulaSeeds",
+          			"Price": 20,
+          			"AvailableStock": 10,
+          			"AvailableStockLimit": "Player",
+          		},
+          		"Lumisteria.SereneMeadow_WinterPansySeeds": {
+          			"Id": "Lumisteria.SereneMeadow_WinterPansySeeds",
+          			"ItemId": "(O)Lumisteria.SereneMeadow_WinterPansySeeds",
+          			"Price": 25,
+          			"AvailableStock": 10,
+          			"AvailableStockLimit": "Player",
+          		},
+          		"Lumisteria.SereneMeadow_SpringPansySeeds": {
+          			"Id": "Lumisteria.SereneMeadow_SpringPansySeeds",
+          			"ItemId": "(O)Lumisteria.SereneMeadow_SpringPansySeeds",
+          			"Price": 25,
+          			"AvailableStock": 10,
+          			"AvailableStockLimit": "Player",
+          		},
+          		"Lumisteria.SereneMeadow_WinterIrisBulb": {
+          			"Id": "Lumisteria.SereneMeadow_WinterIrisBulb",
+          			"ItemId": "(O)Lumisteria.SereneMeadow_WinterIrisBulb",
+          			"Price": 150,
+          			"AvailableStock": 10,
+          			"AvailableStockLimit": "Player",
+          		},
+          		"Lumisteria.SereneMeadow_TropaeolumSeeds": {
+          			"Id": "Lumisteria.SereneMeadow_TropaeolumSeeds",
+          			"ItemId": "(O)Lumisteria.SereneMeadow_TropaeolumSeeds",
+          			"Price": 20,
+          			"AvailableStock": 10,
+          			"AvailableStockLimit": "Player",
+          		},
+          		"Lumisteria.SereneMeadow_LilacSapling": {
+          			"Id": "Lumisteria.SereneMeadow_LilacSapling",
+          			"ItemId": "(O)Lumisteria.SereneMeadow_LilacSapling",
+          			"Price": 2400,
+          			"AvailableStock": 2,
+          			"AvailableStockLimit": "Player",
+          		}
+        	}
+		},
+
+	// Serene Meadow tier 2 compat
+		{
+			"LogName": "Edit seeds & sapling shop inventory - Serene Meadow tier 2 compat",
+       		"Action": "EditData",
+        	"Target": "Data/Shops",
+        	"TargetField": [ "SVFS_SeedsSaplings", "Items" ], 
+            "When": {
+            	"HasMod |contains=Lumisteria.SereneMeadow": true,
+            	"Year |contains=2": true,
+            	},
+            "Entries": {
+            	"Lumisteria.SereneMeadow_ForgetMeNotSeeds": {
+            		"Id": "Lumisteria.SereneMeadow_ForgetMeNotSeeds",
+            		"ItemId": "(O)Lumisteria.SereneMeadow_ForgetMeNotSeeds",
+            		"Price": 40,
+            		"AvailableStock": 5,
+            		"AvailableStockLimit": "Player"
+            	},
+            	"Lumisteria.SereneMeadow_ButterflyLavenderSeeds": {
+            		"Id": "Lumisteria.SereneMeadow_ButterflyLavenderSeeds",
+            		"ItemId": "(O)Lumisteria.SereneMeadow_ButterflyLavenderSeeds",
+            		"Price": 60,
+            		"AvailableStock": 5,
+            		"AvailableStockLimit": "Player"
+            	},
+            	"Lumisteria.SereneMeadow_ClematisStarter": {
+            		"Id": "Lumisteria.SereneMeadow_ClematisStarter",
+            		"ItemId": "(O)Lumisteria.SereneMeadow_ClematisStarter",
+            		"Price": 50,
+            		"AvailableStock": 5,
+            		"AvailableStockLimit": "Player"
+            	},
+            	"Lumisteria.SereneMeadow_HollyhockSeeds": {
+            		"Id": "Lumisteria.SereneMeadow_HollyhockSeeds",
+            		"ItemId": "(O)Lumisteria.SereneMeadow_HollyhockSeeds",
+            		"Price": 120,
+            		"AvailableStock": 5,
+            		"AvailableStockLimit": "Player"
+            	},
+            	"Lumisteria.SereneMeadow_IrisSeeds": {
+            		"Id": "Lumisteria.SereneMeadow_IrisSeeds",
+            		"ItemId": "(O)Lumisteria.SereneMeadow_IrisSeeds",
+            		"Price": 50,
+            		"AvailableStock": 5,
+            		"AvailableStockLimit": "Player"
+            	},
+            	"Lumisteria.SereneMeadow_FoxgloveSeeds": {
+            		"Id": "Lumisteria.SereneMeadow_FoxgloveSeeds",
+            		"ItemId": "(O)Lumisteria.SereneMeadow_FoxgloveSeeds",
+            		"Price": 90,
+            		"AvailableStock": 5,
+            		"AvailableStockLimit": "Player"
+            	},
+            	"Lumisteria.SereneMeadow_TallMallowSeeds": {
+            		"Id": "Lumisteria.SereneMeadow_TallMallowSeeds",
+            		"ItemId": "(O)Lumisteria.SereneMeadow_TallMallowSeeds",
+            		"Price": 50,
+            		"AvailableStock": 5,
+            		"AvailableStockLimit": "Player"
+            	},
+            	"Lumisteria.SereneMeadow_DahliaSeeds": {
+            		"Id": "Lumisteria.SereneMeadow_DahliaSeeds",
+            		"ItemId": "(O)Lumisteria.SereneMeadow_DahliaSeeds",
+            		"Price": 120,
+            		"AvailableStock": 5,
+            		"AvailableStockLimit": "Player"
+            	},
+            	"Lumisteria.SereneMeadow_FuchsiaSeeds": {
+            		"Id": "Lumisteria.SereneMeadow_FuchsiaSeeds",
+            		"ItemId": "(O)Lumisteria.SereneMeadow_FuchsiaSeeds",
+            		"Price": 120,
+            		"AvailableStock": 5,
+            		"AvailableStockLimit": "Player"
+            	},
+            }
+		},
+
+	// Add random assortment of Serene Meadow Flowers to Flowershop
+		{
+			"LogName": "Edit flowershop inventory - Serene Meadow Compat",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "SVFS_FlowerShop", "Items"],
+			"When": {
+            	"HasMod |contains=Lumisteria.SereneMeadow": true,
+            	},
+        	"Entries": {
+        		"Lumisteria.SereneMeadow.Flowers": {
+        			"Id": "Lumisteria.SereneMeadow.Flowers",
+        			"ItemId": "RANDOM_ITEMS (O)",
+        			"MaxItems": 5,
+        			"PerItemCondition": "ITEM_CATEGORY Target -80, ITEM_ID_PREFIX Target Lumisteria.SereneMeadow, !ITEM_CONTEXT_TAG Target lumisteria.crop_tier_3",
+        			"AvoidRepeat": true,
+        			"AvailableStock": 5,
+        			"AvailableStockLimit": "Player"
+        		}
+        	}
+		}
+	]
+}

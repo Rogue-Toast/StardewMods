@@ -10,17 +10,22 @@
                     "Id": "SVFS_SeedsSaplings",
                     "Owners": [
                         {
+                            "Id": "Closed",
                             "Name": "AnyOrNone",
                             "ClosedMessage": "{{i18n:SVFS.shops.ClosedMessage}}",
+                            "Condition": "!TIME 1000 2200"
+                        },
+                        {
+                            "Name": "AnyOrNone",
                             "Dialogues": [
                                 {
                                     "Id": "{{ModId}}_SeedsSaplingsDay1",
-                                    "Condition": "SEASON_DAY summer 6",
+                                    "Condition": "SEASON_DAY summer 3",
                                     "Dialogue": "{{i18n:SVFS.shops.SeedsSaplings1}}"
                                 },
                                 {
                                     "Id": "{{ModId}}_SeedsSaplingsDay2",
-                                    "Condition": "SEASON_DAY summer 7",
+                                    "Condition": "SEASON_DAY summer 4",
                                     "Dialogue": "{{i18n:SVFS.shops.SeedsSaplings2}}"
                                 }
                             ]
@@ -174,17 +179,23 @@
                     "Id": "SVFS_FlowerShop",
                     "Owners": [
                         {
+                            "Id": "Closed",
                             "Name": "AnyOrNone",
-                            "ClosedMessage": "{{i18n:SVFS.shops.ClosedMessage}}",
+                            "ClosedMessage": "{{i18n:SVFS.shops.FlowerClosedMessage}}",
+                            "Condition": "!TIME 1000 2200"
+                        },
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "Portraits/SVFSDaena",
                             "Dialogues": [
                                 {
                                     "Id": "{{ModId}}_FlowerShopDay1",
-                                    "Condition": "SEASON_DAY summer 6",
+                                    "Condition": "SEASON_DAY summer 3",
                                     "Dialogue": "{{i18n:SVFS.shops.FlowerShop1}}"
                                 },
                                 {
                                     "Id": "{{ModId}}_FlowerShopDay2",
-                                    "Condition": "SEASON_DAY summer 7",
+                                    "Condition": "SEASON_DAY summer 4",
                                     "Dialogue": "{{i18n:SVFS.shops.FlowerShop2}}"
                                 }
                             ]
@@ -316,17 +327,22 @@
                     "Id": "SVFS_FurnitureShop",
                     "Owners": [
                         {
+                            "Id": "Closed",
                             "Name": "AnyOrNone",
                             "ClosedMessage": "{{i18n:SVFS.shops.ClosedMessage}}",
+                            "Condition": "!TIME 1000 2200",
+                        },
+                        {
+                            "Name": "AnyOrNone",
                             "Dialogues": [
                                 {
                                     "Id": "{{ModId}}_FurnitureShopDay1",
-                                    "Condition": "SEASON_DAY summer 6",
+                                    "Condition": "SEASON_DAY summer 3",
                                     "Dialogue": "{{i18n:SVFS.shops.FurnitureShop1}}"
                                 },
                                 {
                                     "Id": "{{ModId}}_FlowerShopDay2",
-                                    "Condition": "SEASON_DAY summer 7",
+                                    "Condition": "SEASON_DAY summer 4",
                                     "Dialogue": "{{i18n:SVFS.shops.FurnitureShop2}}"
                                 }
                             ]
@@ -557,17 +573,23 @@
                     "Id": "SVFS_ClothingShop",
                     "Owners": [
                         {
+                            "Id": "Closed",
                             "Name": "AnyOrNone",
-                            "ClosedMessage": "{{i18n:SVFS.shops.ClosedMessage}}",
+                            "ClosedMessage": "{{i18n:SVFS.shops.ClothingClosedMessage}}",
+                            "Condition": "!TIME 1000 2200"
+                        },
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "Portraits/SVFSNaufal",
                             "Dialogues": [
                                 {
                                     "Id": "{{ModId}}_ClothingShopDay1",
-                                    "Condition": "SEASON_DAY summer 6",
+                                    "Condition": "SEASON_DAY summer 3",
                                     "Dialogue": "{{i18n:SVFS.shops.ClothingShop1}}"
                                 },
                                 {
                                     "Id": "{{ModId}}_ClothingShopDay2",
-                                    "Condition": "SEASON_DAY summer 7",
+                                    "Condition": "SEASON_DAY summer 4",
                                     "Dialogue": "{{i18n:SVFS.shops.clothingShop2}}"
                                 }
                             ]

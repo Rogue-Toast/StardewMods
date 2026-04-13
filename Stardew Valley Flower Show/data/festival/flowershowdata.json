@@ -7,11 +7,15 @@
             "Entries": {
                 "{{ModId}}_FlowerShow": {
                     "DisplayName": "{{i18n:SVFS.FlowerShow.name}}",
+
                     "Season": "Summer",
-                    "StartDay": "6",
-                    "EndDay": "7",
+                    "StartDay": "3",
+                    "EndDay": "4",
                     "StartTime": "1000",
                     "StartMessage": "{{i18n:SVFS.StartShow}}",
+                    "MapReplacements": {
+                        "Logophile.SVFS_FlowerShowForest": "Logophile.SVFS_FlowerShowForest"
+                    },
                     "ShowOnCalendar": true
                 }
             },    
@@ -27,7 +31,7 @@
                 "{{ModId}}_SVFSWeather": {
                     "Id": "{{ModId}}_SVFSWeather",
                     "Trigger": "DayStarted",
-                    "Condition": "SEASON_DAY summer 5 summer 6",
+                    "Condition": "SEASON_DAY summer 2 summer 3",
                     "Action": "Spiderbuttons.BETAS_WeatherForTomorrow Default Sun",
                     "MarkActionApplied": false
                 }

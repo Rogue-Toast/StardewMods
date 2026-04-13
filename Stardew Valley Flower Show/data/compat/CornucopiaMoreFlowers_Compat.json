@@ -1,0 +1,120 @@
+{
+    "Changes": [
+
+    // More Flowers - seed shop compat
+        {
+            "LogName": "Edit seed shop inventory - Cornucopia More Flowers base compat",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SVFS_SeedsSaplings", "Items" ], 
+            "When": {
+                "HasMod |contains=Cornucopia.MoreFlowers": true,
+                "HasFlag |contains=Cornucopia.MoreFlowers_ExtendedFlowersPackEnabled": false
+                },
+           "Entries": {
+                "Cornucopia.MoreFlowers.CommonSeeds1": {
+                    "Id": "Cornucopia.MoreFlowers.CommonSeeds1",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target Cornucopia, ITEM_CONTEXT_TAG Target cornucopia_pack_essentialflowers, ITEM_CONTEXT_TAG Target cornucopia_shop_pierre, ITEM_CONTEXT_TAG Target cornucopia_rarity_common",
+                    "MaxItems": 5,
+                    "AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+                },
+                "Cornucopia.MoreFlowers.RareSeeds1": {
+                    "Id": "Cornucopia.MoreFlowers.RareSeeds1",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "SYNCED_RANDOM day seedshop_essentialrare 0.3 @addDailyLuck, ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target Cornucopia, ITEM_CONTEXT_TAG Target cornucopia_rarity_rare",
+                    "MaxItems": 1,
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        },
+        {
+            "LogName": "Edit seed shop inventory - Cornucopia More Flowers extended compat",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SVFS_SeedsSaplings", "Items" ], 
+            "When": {
+                "HasMod |contains=Cornucopia.MoreFlowers": true,
+                "HasFlag |contains=Cornucopia.MoreFlowers_ExtendedFlowersPackEnabled": true
+                },
+            "Entries": {
+                "Cornucopia.MoreFlowers.CommonSeeds2": {
+                    "Id": "Cornucopia.MoreFlowers.CommonSeeds2",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target Cornucopia, ITEM_CONTEXT_TAG Target cornucopia_shop_pierre, ITEM_CONTEXT_TAG Target cornucopia_rarity_common",
+                    "MaxItems": 8,
+                    "AvailableStock": -1,
+                    "AvailableStockLimit": "Player"
+                },
+                "Cornucopia.MoreFlowers.RareSeeds2": {
+                    "Id": "Cornucopia.MoreFlowers.RareSeeds2",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "SYNCED_RANDOM day seedshop_extendedrare 0.3 @addDailyLuck, ITEM_CATEGORY Target -74, ITEM_ID_PREFIX Target Cornucopia, ITEM_CONTEXT_TAG Target cornucopia_rarity_rare",
+                    "MaxItems": 1,
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        },
+
+    // Add small assortment of common flowers to flowershop
+        {
+            "LogName": "Edit flowershop inventory - Cornucopia More Flowers base compat",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SVFS_FlowerShop", "Items" ],
+            "When": {
+                "HasMod |contains=Cornucopia.MoreFlowers": true,
+                "HasFlag |contains=Cornucopia.MoreFlowers_ExtendedFlowersPackEnabled": false
+                },
+           "Entries": {
+                "Cornucopia.MoreFlowers.CommonFlowers1": {
+                    "Id": "Cornucopia.MoreFlowers.CommonFlowers",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "ITEM_CATEGORY Target -80, ITEM_ID_PREFIX Target Cornucopia, ITEM_CONTEXT_TAG Target cornucopia_rarity_common, ITEM_CONTEXT_TAG Target cornucopia_pack_essentialflowers",
+                    "MaxItems": 5,
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                },
+                "Cornucopia.MoreFlowers.RareFlowers1": {
+                    "Id": "Cornucopia.MoreFlowers.RareFlowers1",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "SYNCED_RANDOM day flowershop_essentialrare 0.2 @addDailyLuck, ITEM_CATEGORY Target -80, ITEM_ID_PREFIX Target Cornucopia, ITEM_CONTEXT_TAG Target cornucopia_rarity_rare",
+                    "MaxItems": 1,
+                    "AvailableStock": 2,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        },
+        {
+            "LogName": "Edit flowershop; inventory - Cornucopia More Flowers extended compat",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SVFS_FlowerShop", "Items" ],
+            "When": {
+                "HasMod |contains=Cornucopia.MoreFlowers": true,
+                "HasFlag |contains=Cornucopia.MoreFlowers_ExtendedFlowersPackEnabled": true
+                },
+            "Entries": {
+                "Cornucopia.MoreFlowers.CommonFlowers2": {
+                    "Id": "Cornucopia.MoreFlowers.CommonFlowers2",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "ITEM_CATEGORY Target -80, ITEM_ID_PREFIX Target Cornucopia, ITEM_CONTEXT_TAG Target cornucopia_pack_extendedflowers, ITEM_CONTEXT_TAG cornucopia_rarity_common",
+                    "MaxItems": 5,
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                },
+                "Cornucopia.MoreFlowers.RareFlowers2": {
+                    "Id": "Cornucopia.MoreFlowers.RareFlowers2",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "SYNCED_RANDOM day flowershop_extendedrare 0.2 @addDailyLuck, ITEM_CATEGORY Target -80, ITEM_ID_PREFIX Target Cornucopia, ITEM_CONTEXT_TAG Target cornucopia_rarity_rare",
+                    "MaxItems": 1,
+                    "AvailableStock": 2,
+                    "AvailableStockLimit": "Player"
+                }
+            }
+        }
+    ]
+}

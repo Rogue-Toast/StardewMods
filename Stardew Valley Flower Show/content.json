@@ -4,7 +4,7 @@
 
 	// DYNAMIC TOKENS
 	"DynamicTokens": [
-		// RANDOM FLOWER SEEDS -- TO-DO: ADD IN MODDED FLOWER SEED OPTIONS	
+		// RANDOM FLOWER SEEDS
 		{
 			"Name": "RandomFlowerSeedsToken1", // vanilla flower seeds
 			"Value": "{{Random: (O)425, (O)427, (O)429, (O)431, (O)453, (O)455, (O)MixedFlowerSeeds |key=vanillaseeds}}"
@@ -21,7 +21,7 @@
 			"Name": "RandomFlowerSeedsToken4", // vanilla flower seeds
 			"Value": "{{Random: (O)453, (O)455, (O)MixedFlowerSeeds, (O)425, (O)427, (O)429, (O)431 |key=vanillaseeds}}"
 		},
-		// RANDOM FLOWERS -- TO-DO: ADD IN MODDED FLOWER OPTIONS
+		// RANDOM FLOWERS
 		{
 			"Name": "RandomFlowersToken1", // vanilla flowers
 			"Value": "{{Random: (O)376, (O)421, (O)591, (O)593, (O)595, (O)597 |key=vanillaflowers}}"
@@ -37,6 +37,19 @@
 		{
 			"Name": "RandomFlowersToken4", // vanilla forage flowers
 			"Value": "{{Random: (O)18, (O)283, (O)402, (O)418}}"
+		},
+		// RANDOM FLORAL DECOR - VMV
+		{
+			"Name": "RandomVMVFlowerDecorToken1", //VMV floral decor items
+			"Value": "{{Random: (F)Lumisteria.MtVapius_FurnitureFlowers_Vase01, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase02, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase03, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase04, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase05, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase06, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase07, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase08, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase09 |key=VMVvase}}"
+		},
+		{
+			"Name": "RandomVMVFlowerDecorToken2", //VMV floral decor items
+			"Value": "{{Random: (F)Lumisteria.MtVapius_FurnitureFlowers_Vase02, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase03, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase04, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase05, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase06, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase07, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase08, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase09, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase01 |key=VMVvase}}"
+		},
+		{
+			"Name": "RandomVMVFlowerDecorToken3", //VMV floral decor items
+			"Value": "{{Random: (F)Lumisteria.MtVapius_FurnitureFlowers_Vase03, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase04, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase05, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase06, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase07, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase08, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase09, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase01, (F)Lumisteria.MtVapius_FurnitureFlowers_Vase02 |key=VMVvase}}"
 		},
 	],
 
@@ -133,6 +146,18 @@
 			"Target": "Portraits/SVFSCarl",
 			"FromFile": "assets/CarlPortrait.png"
 		},
+		{
+			"LogName": "Load vendor portraits - Daena",
+			"Action": "Load",
+			"Target": "Portraits/SVFSDaena",
+			"FromFile": "assets/Daena_FlowerPortrait.png"
+		},
+		{
+			"LogName": "Load vendor portraits - Naufal",
+			"Action": "Load",
+			"Target": "Portraits/SVFSNaufal",
+			"FromFile": "assets/Naufal_ClothingPortrait.png"
+		},
 
 		// INCLUDES
 		{
@@ -148,7 +173,7 @@
 		{
 			"LogName": "Include compat data",
 			"Action": "Include",
-			"FromFile": "data/compat/GemSeaShores_Compat.json"
+			"FromFile": "data/compat/GemSeaShores_Compat.json, data/compat/VMV_Compat.json, data/compat/SereneMeadow_Compat.json, data/compat/CornucopiaMoreFlowers_Compat.json"
 		},
 
 		// FESTIVAL MAP PATCHES
@@ -175,7 +200,7 @@
 			"ToArea": { "X": 25, "Y": 36, "Height": 3, "Width":7},
 			"When": {
 				"Season": "summer",
-				"Day": "6"
+				"Day": "3"
 			}
 		},
 		{
@@ -188,7 +213,7 @@
 			"ToArea": { "X": 25, "Y": 36, "Height": 3, "Width":7},
 			"When": {
 				"Season": "summer",
-				"Day": "7"
+				"Day": "4"
 			}
 		},
 		{
@@ -201,7 +226,7 @@
 			"ToArea": { "X": 24, "Y": 31, "Height": 2, "Width":1},
 			"When": {
 				"Season": "summer",
-				"Day": "6"
+				"Day": "3"
 			}
 		},
 		{
@@ -214,7 +239,7 @@
 			"ToArea": { "X": 24, "Y": 31, "Height": 2, "Width":1},
 			"When": {
 				"Season": "summer",
-				"Day": "7"
+				"Day": "4"
 			}
 		},
 		{
@@ -227,7 +252,7 @@
 			"ToArea": { "X": 3, "Y": 29, "Height": 2, "Width":5},
 			"When": {
 				"Season": "summer",
-				"Day": "6"
+				"Day": "3"
 			}
 		},
 		{
@@ -240,7 +265,7 @@
 			"ToArea": { "X": 3, "Y": 29, "Height": 2, "Width":5},
 			"When": {
 				"Season": "summer",
-				"Day": "7"
+				"Day": "4"
 			}
 		},
 		{
@@ -253,7 +278,7 @@
 			"ToArea": { "X": 13, "Y": 27, "Height": 8, "Width":3},
 			"When": {
 				"Season": "summer",
-				"Day": "6"
+				"Day": "3"
 			}
 		},
 		{
@@ -266,7 +291,7 @@
 			"ToArea": { "X": 13, "Y": 27, "Height": 8, "Width":3},
 			"When": {
 				"Season": "summer",
-				"Day": "7",
+				"Day": "4",
 			}
 		},
 
@@ -285,7 +310,7 @@
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
 				"HasMod |contains=Aimon111.BeachAreas": false,
 				"Season": "summer",
-				"Day": "6, 7"
+				"Day": "3, 4"
 			}
 		},
 		{
@@ -300,7 +325,7 @@
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
 				"HasMod |contains=Aimon111.BeachAreas": false,
 				"Season": "summer",
-				"Day": "6, 7"
+				"Day": "3, 4"
 			}
 		},
 		{
@@ -330,7 +355,7 @@
 			"When": {
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
 				"Season": "summer",
-				"Day": "6, 7"
+				"Day": "3, 4"
 			}
 		},
 		{
@@ -344,7 +369,7 @@
 			"When": {
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
 				"Season": "summer",
-				"Day": "6, 7"
+				"Day": "3, 4"
 			}
 		},
 		{
@@ -413,7 +438,7 @@
                 "{{ModId}}_FlowerShowHype": {
                 	"Id": "{{ModId}}_FlowerShowHype",
                     "Trigger": "DayStarted",
-                    "Condition": "SEASON_DAY summer 2",
+                    "Condition": "SEASON_DAY spring 27",
                     "Actions": [
                         "AddConversationTopic SVFS_FlowerShowHype 4"
                     ],
@@ -432,7 +457,7 @@
                 "{{ModId}}_FlowerShowOver": {
                 	"Id": "{{ModId}}_FlowerShowOver",
                     "Trigger": "DayStarted",
-                    "Condition": "SEASON_DAY summer 8",
+                    "Condition": "SEASON_DAY summer 5",
                     "Actions": [
                         "AddConversationTopic SVFS_FlowerShowOver 3"
                     ],
@@ -453,7 +478,7 @@
         		"{{ModId}}_FestivalInvitation": {
         			"Id": "{{ModId}}_FestivalInvitation",
         			"Trigger": "DayEnding",
-        			"Condition": "SEASON_DAY spring 28",
+        			"Condition": "SEASON_DAY spring 24",
         			"Actions": [
         				"AddMail Current SVFS.Invitation"
         			]
@@ -461,7 +486,7 @@
         		"{{ModId}}_ReminderLetter": {
         			"Id": "{{ModId}}_ReminderLetter",
         			"Trigger": "DayEnding",
-        			"Condition": "SEASON_DAY summer 4",
+        			"Condition": "SEASON_DAY summer 1",
         			"Actions": [
         				"AddMail Current SVFS.ReminderMail"
         			]

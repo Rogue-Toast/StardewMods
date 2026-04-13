@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/Town",
             "Entries": {
-                "{{ModId}}_EvelynIsInvited/GameStateQuery DATE_RANGE spring 23 1 summer 2 1/!FestivalDay/Time 0600 1600/Weather sunny": "SettlingIn/9 57
+                "{{ModId}}_EvelynIsInvited/GameStateQuery DATE_RANGE spring 23 1 spring 28 1/!FestivalDay/Time 0600 1600/Weather sunny": "SettlingIn/9 57
                 /farmer 2 54 1 Evelyn 14 60 3 Caroline 10 60 1 Jodi 12 61 0/pause 100/advancedMove farmer false 12 0 0 5 -2 0 2 100/emote Evelyn 40/textAboveHead Caroline \"{{i18n:SVFS.Invited.Caroline.02}}\" true
                 /pause 2500/textAboveHead Jodi \"{{i18n:SVFS.Invited.Jodi.02}}\" true/pause 2500/
                 /textAboveHead Evelyn \"{{i18n:SVFS.Invited.Evelyn.01}}\"/pause 2500/emote Caroline 32 true/emote Jodi 20 true/pause 2500/
@@ -26,7 +26,7 @@
             "Action": "EditData",
             "Target": "Data/Events/{{ModId}}_FlowerShowForest",
             "Entries": {
-                "{{ModId}}_FlowerShowFinalEvent/Season Summer/DayOfMonth 7/Time 1000 1600": "movie_classic/14 37/
+                "{{ModId}}_FlowerShowFinalEvent/Season Summer/DayOfMonth 4/Time 1000 1600": "movie_classic/14 37/
                 /farmer 20 38 3 Leah 20 36 3 Jas 20 35 3 Marnie 20 34 3 Willy 23 41 0 Haley 19 40 0 Vincent 18 41 0 Sam 17 41 0 George 17 39 0 Evelyn 16 39 0 Pierre 15 40 0 Caroline 14 39 0 Jodi 13 39 0 Abigail 14 41 0 Emily 12 40 0 Sandy 11 40 0 Demetrius 9 41 0 Robin 8 41 0 Harvey 6 38 1 Gus 6 37 1 Lewis 10 37 1 Penny 8 36 1 Alex 8 35 1 Linus 7 33 1
                 /addTemporaryActor SVFSSamantha 16 32 16 27 2 true Character/changeName SVFSSamantha Samantha Woodward
                 /addTemporaryActor SVFSCarl 16 32 12 27 2 true Character/changeName SVFSCarl Carl Parker-Hodges

@@ -6,7 +6,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Abigail",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "900 SeedShop 4 5 0/1030 {{ModId}}_FlowerShowForest 5 21 2 abigail_sit_down \"Strings\\schedules\\Abigail:FlowerShow.000\"/2000 SeedShop 1 9 3 abigail_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 4 21 2/610 {{ModId}}_FlowerShowForest 5 21 2 abigail_sit_down \"Strings\\schedules\\Abigail:FlowerShow.000\"/2000 SeedShop 1 9 3 abigail_sleep",
             }
         },
         // ALEX
@@ -15,7 +15,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Alex",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "730 Beach 30 13 2 square_7_7/1000 {{ModId}}_FlowerShowForest 14 41 0 \"Strings\\schedules\\Alex:FlowerShow.000\"/1700 JoshHouse 14 5 2 alex_lift_weights/1900 JoshHouse 8 19 2/2000 JoshHouse 17 5 0/2200 JoshHouse 21 4 1 alex_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 14 40 0/610 {{ModId}}_FlowerShowForest 14 41 0 \"Strings\\schedules\\Alex:FlowerShow.000\"/1700 JoshHouse 14 5 2 alex_lift_weights/1900 JoshHouse 8 19 2/2000 JoshHouse 17 5 0/2200 JoshHouse 21 4 1 alex_sleep",
             }
         },
         // CAROLINE
@@ -24,7 +24,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Caroline",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "800 SeedShop 37 6 3/1000 {{ModId}}_FlowerShowForest 11 35 3 \"Strings\\schedules\\Caroline:FlowerShow.000\"/1700 SeedShop 25 18 2 square_9_9/2100 SeedShop 25 4 1 caroline_sleep",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 11 36 2/610 {{ModId}}_FlowerShowForest 11 35 3 \"Strings\\schedules\\Caroline:FlowerShow.000\"/1700 SeedShop 25 18 2 square_9_9/2100 SeedShop 25 4 1 caroline_sleep",
             }
         },
         // DEMETRIUS
@@ -33,7 +33,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Demetrius",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "750 ScienceHouse 29 9 0/1100 {{ModId}}_FlowerShowForest 21 25 2 \"Strings\\schedules\\Demetrius:FlowerShow.000\"/1900 ScienceHouse 27 9 0/2040 ScienceHouse 28 9 0/2100 ScienceHouse 15 4 0/2230 ScienceHouse 19 4 11 demetrius_sleep",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 20 25 2/610 {{ModId}}_FlowerShowForest 21 25 2 \"Strings\\schedules\\Demetrius:FlowerShow.000\"/1900 ScienceHouse 27 9 0/2040 ScienceHouse 28 9 0/2100 ScienceHouse 15 4 0/2230 ScienceHouse 19 4 11 demetrius_sleep",
             }
         },
         // ELLIOTT
@@ -42,7 +42,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Elliott",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "800 ElliottHouse 1 5 0/1000 {{ModId}}_FlowerShowForest 9 21 2 \"Strings\\schedules\\Elliott:FlowerShow.000\"/1800 ElliottHouse 7 7 2/2200 ElliottHouse 1 5 0/2400 ElliottHouse 13 4 1 elliott_sleep",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 10 21 2/610 {{ModId}}_FlowerShowForest 9 21 2 \"Strings\\schedules\\Elliott:FlowerShow.000\"/1800 ElliottHouse 7 7 2/2200 ElliottHouse 1 5 0/2400 ElliottHouse 13 4 1 elliott_sleep",
             }
         },
         // EMILY
@@ -51,7 +51,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Emily",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "900 HaleyHouse 16 5 2/1000 {{ModId}}_FlowerShowForest 21 35 1 \"Strings\\schedules\\Emily:FlowerShow.000\"/1530 Saloon 15 17 0 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 21 36 1/610 {{ModId}}_FlowerShowForest 21 35 1 \"Strings\\schedules\\Emily:FlowerShow.000\"/1530 Saloon 15 17 0 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",
             }
         },
         // EVELYN
@@ -60,8 +60,8 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Evelyn",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "800 JoshHouse 3 17 0 square_3_1_0/1000 {{ModId}}_FlowerShowForest 14 31 0 \"Strings\\schedules\\Evelyn:FlowerShow.000\"/1730 JoshHouse 4 17 0 square_3_1_0/1900 JoshHouse 17 17 0/2130 JoshHouse 2 5 1",
-                "{{ModId}}_FlowerShow_2": "800 JoshHouse 3 17 0 square_3_1_0/1000 {{ModId}}_FlowerShowForest 18 39 0 \"Strings\\schedules\\Evelyn:FlowerShow.001\"/1730 JoshHouse 4 17 0 square_3_1_0/1900 JoshHouse 17 17 0/2130 JoshHouse 2 5 1",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 13 31 0/610 {{ModId}}_FlowerShowForest 14 31 0 \"Strings\\schedules\\Evelyn:FlowerShow.000\"/1730 JoshHouse 4 17 0 square_3_1_0/1900 JoshHouse 17 17 0/2130 JoshHouse 2 5 1",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 17 39 0/610 {{ModId}}_FlowerShowForest 18 39 0 \"Strings\\schedules\\Evelyn:FlowerShow.001\"/1730 JoshHouse 4 17 0 square_3_1_0/1900 JoshHouse 17 17 0/2130 JoshHouse 2 5 1",
             }
         },
         // GEORGE
@@ -70,7 +70,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/George",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "630 JoshHouse 16 22 0/1000 {{ModId}}_FlowerShowForest 19 39 0 \"Strings\\schedules\\George:FlowerShow.000\"/1730 JoshHouse 16 22 0/2000 JoshHouse 3 5 0 george_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 18 39 0/610 {{ModId}}_FlowerShowForest 19 39 0 \"Strings\\schedules\\George:FlowerShow.000\"/1730 JoshHouse 16 22 0/2000 JoshHouse 3 5 0 george_sleep",
             }
         },
         // GUS
@@ -79,7 +79,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Gus",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "800 Saloon 16 4 2 gus_sit_down/1000 {{ModId}}_FlowerShowForest 3 38 0 \"Strings\\schedules\\Gus:FlowerShow.000\"/1530 Saloon 14 18 2 gus_clean/1830 Saloon 12 18 0/1850 Saloon 10 18 2/1940 Saloon 12 18 0/1950 Saloon 10 18 2/2030 Saloon 12 18 0/2040 Saloon 10 18 2/2400 Saloon 23 4 1 gus_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 3 39 0/610 {{ModId}}_FlowerShowForest 3 38 0 \"Strings\\schedules\\Gus:FlowerShow.000\"/1530 Saloon 14 18 2 gus_clean/1830 Saloon 12 18 0/1850 Saloon 10 18 2/1940 Saloon 12 18 0/1950 Saloon 10 18 2/2030 Saloon 12 18 0/2040 Saloon 10 18 2/2400 Saloon 23 4 1 gus_sleep",
             }
         },
         // HALEY
@@ -88,7 +88,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Haley",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "840 HaleyHouse 6 5 0/930 HaleyHouse 8 7 1/1030 {{ModId}}_FlowerShowForest 5 31 3 \"Strings\\schedules\\Haley:FlowerShow.000\"/1730 HaleyHouse 19 16 0 square_5_1/2000 HaleyHouse 5 7 2 square_5_5/2300 HaleyHouse 1 5 3 haley_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 6 31 3/610 {{ModId}}_FlowerShowForest 5 31 3 \"Strings\\schedules\\Haley:FlowerShow.000\"/1730 HaleyHouse 19 16 0 square_5_1/2000 HaleyHouse 5 7 2 square_5_5/2300 HaleyHouse 1 5 3 haley_sleep",
             }
         },
         // HARVEY
@@ -97,7 +97,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Harvey",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "700 HarveyRoom 21 7 0/830 ArchaeologyHouse 16 9 0/1030 {{ModId}}_FlowerShowForest 47 37 1 \"Strings\\schedules\\Harvey:FlowerShow.000\"/1500 HarveyRoom 21 7 0 \"Strings\\schedules\\Harvey:Sat.000\"/1630 HarveyRoom 3 4 0/1900 HarveyRoom 8 5 0/2100 HarveyRoom 6 4 0/2200 HarveyRoom 13 4 1 harvey_sleep",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 47 36 1/610 {{ModId}}_FlowerShowForest 47 37 1 \"Strings\\schedules\\Harvey:FlowerShow.000\"/1500 HarveyRoom 21 7 0 \"Strings\\schedules\\Harvey:Sat.000\"/1630 HarveyRoom 3 4 0/1900 HarveyRoom 8 5 0/2100 HarveyRoom 6 4 0/2200 HarveyRoom 13 4 1 harvey_sleep",
             }
         },
         // JAS
@@ -106,7 +106,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Jas",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "900 AnimalShop 7 5 0/1100 {{ModId}}_FlowerShowForest 23 41 2 \"Strings\\schedules\\Jas:FlowerShow.000\"/1600 AnimalShop 17 15 3 jas_read/1900 AnimalShop 4 7 2/2100 AnimalShop 1 7 3 jas_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 23 40 2/610 {{ModId}}_FlowerShowForest 23 41 2 \"Strings\\schedules\\Jas:FlowerShow.000\"/1600 AnimalShop 17 15 3 jas_read/1900 AnimalShop 4 7 2/2100 AnimalShop 1 7 3 jas_sleep",
             }
         },
         // JODI
@@ -115,7 +115,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Jodi",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "800 SamHouse 6 5 0 jodi_dishes/940 SamHouse 5 5 0/1000 {{ModId}}_FlowerShowForest 24 41 0 \"Strings\\schedules\\Jodi:FlowerShow.000\"/1700 SamHouse 6 13 0/2100 SamHouse 10 22 3/2200 SamHouse 22 5 1 jodi_sleep",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 24 40 0/610 {{ModId}}_FlowerShowForest 24 41 0 \"Strings\\schedules\\Jodi:FlowerShow.000\"/1700 SamHouse 6 13 0/2100 SamHouse 10 22 3/2200 SamHouse 22 5 1 jodi_sleep",
             }
         },
         // LEAH
@@ -124,7 +124,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Leah",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "900 LeahHouse 3 7 3 leah_sculpt/1030 {{ModId}}_FlowerShowForest 21 21 2 leah_draw \"Strings\\schedules\\Leah:FlowerShow.000\"/1900 LeahHouse 8 5 0/2200 LeahHouse 13 10 2/2400 LeahHouse 2 4 3 leah_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 20 21 2/610 {{ModId}}_FlowerShowForest 21 21 2 leah_draw \"Strings\\schedules\\Leah:FlowerShow.000\"/1900 LeahHouse 8 5 0/2200 LeahHouse 13 10 2/2400 LeahHouse 2 4 3 leah_sleep",
             }
         },
         // LEWIS
@@ -133,8 +133,8 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Lewis",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "800 ManorHouse 8 5 0/1000 Blacksmith 4 15 0 \"Strings\\schedules\\Lewis:6.000\"/1200 ArchaeologyHouse 2 10 0 \"Strings\\schedules\\Lewis:6.001\"/1400 {{ModId}}_FlowerShowForest 11 40 0 \"Strings\\schedules\\Lewis:FlowerShow.000\"/1800 ManorHouse 7 5 0 square_5_1_0/2100 ManorHouse 3 6 0/2200 ManorHouse 22 4 1 lewis_sleep",
-                "{{ModId}}_FlowerShow_2": "800 ManorHouse 8 5 0/1000 Town 62 88 0/1040 Town 65 86 3 lewis_garden/1140 {{ModId}}_FlowerShowForest 11 40 0 \"Strings\\schedules\\Lewis.FlowerShow.001\"/1600 ManorHouse 7 5 0 square_5_1_0/2000 ManorHouse 3 6 0/2200 ManorHouse 22 4 1 lewis_sleep",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 11 41 0/610 {{ModId}}_FlowerShowForest 11 40 0 \"Strings\\schedules\\Lewis:FlowerShow.000\"/1800 ManorHouse 7 5 0 square_5_1_0/2100 ManorHouse 3 6 0/2200 ManorHouse 22 4 1 lewis_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 11 41 0/610 {{ModId}}_FlowerShowForest 11 40 0 \"Strings\\schedules\\Lewis.FlowerShow.001\"/1600 ManorHouse 7 5 0 square_5_1_0/2000 ManorHouse 3 6 0/2200 ManorHouse 22 4 1 lewis_sleep",
             }
         },
         // LINUS
@@ -143,7 +143,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Linus",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "630 Mountain 39 5 1/940 Mountain 44 27 1 square_3_3/1100 {{ModId}}_FlowerShowForest 20 20 2 \"Strings\\schedules\\Linus:FlowerShow.000\"/1700 Mountain 28 9 1/2000 Mountain 25 5 1/2020 Tent 2 2 2",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 19 20 2/610 {{ModId}}_FlowerShowForest 20 20 2 \"Strings\\schedules\\Linus:FlowerShow.000\"/1700 Mountain 28 9 1/2000 Mountain 25 5 1/2020 Tent 2 2 2",
             }
         },
         // MARNIE
@@ -152,7 +152,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Marnie",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "830 AnimalShop 17 5 0/850 AnimalShop 12 14 2/1100 {{ModId}}_FlowerShowForest 12 26 0 \"Strings\\schedules\\Marnie:FlowerShow.000\"/1600 AnimalShop 17 8 1/1700 Saloon 9 22 1 marnie_drink/2300 AnimalShop 12 5 3 marnie_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 13 26 0/610 {{ModId}}_FlowerShowForest 12 26 0 \"Strings\\schedules\\Marnie:FlowerShow.000\"/1600 AnimalShop 17 8 1/1700 Saloon 9 22 1 marnie_drink/2300 AnimalShop 12 5 3 marnie_sleep",
             }
         },
         // MARU
@@ -161,7 +161,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Maru",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "800 ScienceHouse 5 6 1 maru_tinker/1000 ScienceHouse 19 18 0/1100 {{ModId}}_FlowerShowForest 49 31 1 \"Strings\\schedules\\Maru:FlowerShow.000\"/1600 Mountain 55 31 0/1900 Mountain 8 23 3 \"Strings\\schedules\\Maru:summer.000\"/2400 ScienceHouse 2 4 3 maru_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 49 30 1/610 {{ModId}}_FlowerShowForest 49 31 1 \"Strings\\schedules\\Maru:FlowerShow.000\"/1600 Mountain 55 31 0/1900 Mountain 8 23 3 \"Strings\\schedules\\Maru:summer.000\"/2400 ScienceHouse 2 4 3 maru_sleep",
             }
         },
         // PENNY
@@ -170,7 +170,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Penny",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "810 Town 96 18 3/1100 {{ModId}}_FlowerShowForest 8 22 2 penny_sit_down \"Strings\\schedules\\Penny:FlowerShow.000\"/1800 Trailer 12 6 0 penny_dishes/2100 Trailer 4 9 1 penny_sleep",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 8 23 2/610 {{ModId}}_FlowerShowForest 8 22 2 penny_sit_down \"Strings\\schedules\\Penny:FlowerShow.000\"/1800 Trailer 12 6 0 penny_dishes/2100 Trailer 4 9 1 penny_sleep",
             }
         },
         // PIERRE
@@ -179,7 +179,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Pierre",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "700 SeedShop 10 20 0/830 SeedShop 4 17 2/1200 {{ModId}}_FlowerShowForest 17 25 3 \"Strings\\schedules\\Pierre:FlowerShow.000\"/1700 SeedShop 11 20 0/1900 SeedShop 37 5 0/2100 SeedShop 20 5 0/2300 SeedShop 24 4 1 pierre_sleep",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 17 26 3/610 {{ModId}}_FlowerShowForest 17 25 3 \"Strings\\schedules\\Pierre:FlowerShow.000\"/1700 SeedShop 11 20 0/1900 SeedShop 37 5 0/2100 SeedShop 20 5 0/2300 SeedShop 24 4 1 pierre_sleep",
             }
         },
         // ROBIN
@@ -188,7 +188,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Robin",
             "Entries": {
-                "{{ModId}}_FlowerShow_1": "800 ScienceHouse 8 18 2/1230 {{ModId}}_FlowerShowForest 19 27 3 \"Strings\\schedules\\Robin:FlowerShow.000\"/1700 Mountain 29 36 2/1930 ScienceHouse 16 5 0/2100 ScienceHouse 21 4 1 robin_sleep",
+                "{{ModId}}_FlowerShow_1": "0 {{ModId}}_FlowerShowForest 20 27 3/610 {{ModId}}_FlowerShowForest 19 27 3 \"Strings\\schedules\\Robin:FlowerShow.000\"/1700 Mountain 29 36 2/1930 ScienceHouse 16 5 0/2100 ScienceHouse 21 4 1 robin_sleep",
             }
         },
         /*// SANDY
@@ -207,7 +207,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Willy",
             "Entries": {
-                "{{ModId}}_FlowerShow_2": "610 Beach 38 36 2 dick_fish/850 FishShop 5 4 2/1230 {{ModId}}_FlowerShowForest 40 42 0 \"Strings\\schedules\\Willy:FlowerShow.000\"/1700 Beach 25 36 2 dick_fish/2200 FishShop 5 4 2",
+                "{{ModId}}_FlowerShow_2": "0 {{ModId}}_FlowerShowForest 41 42 2/610 {{ModId}}_FlowerShowForest 41 43 2 dick_fish/1000 {{ModId}}_FlowerShowForest 40 42 0 \"Strings\\schedules\\Willy:FlowerShow.000\"/1700 Beach 25 36 2 dick_fish/2200 FishShop 5 4 2",
             }
         }
     ]
